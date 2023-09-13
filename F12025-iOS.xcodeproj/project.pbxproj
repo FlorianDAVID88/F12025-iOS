@@ -11,6 +11,20 @@
 		EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */; };
 		EF4BA3FB2AB1A9A8005E7D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */; };
 		EF4BA3FE2AB1A9A8005E7D95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA3FD2AB1A9A8005E7D95 /* Preview Assets.xcassets */; };
+		EF4BA40B2AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA4082AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf */; };
+		EF4BA40C2AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */; };
+		EF4BA40D2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA40A2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf */; };
+		EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA40F2AB1B0CB005E7D95 /* Pilote.swift */; };
+		EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */; };
+		EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4142AB1B0FD005E7D95 /* Pays.swift */; };
+		EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4162AB1B10F005E7D95 /* Circuit.swift */; };
+		EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEA2AB25C42002D386D /* HomeView.swift */; };
+		EFADECED2AB25C6B002D386D /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEC2AB25C6B002D386D /* TeamsView.swift */; };
+		EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEE2AB25C88002D386D /* StandingsView.swift */; };
+		EFADECF12AB25CA7002D386D /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF02AB25CA7002D386D /* TracksView.swift */; };
+		EFADECF42AB25D85002D386D /* McLaren-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */; };
+		EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */; };
+		EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF72AB26860002D386D /* F1ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,21 @@
 		EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4BA3FD2AB1A9A8005E7D95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF4BA4082AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold_web_0.ttf"; sourceTree = "<group>"; };
+		EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular_web_0.ttf"; sourceTree = "<group>"; };
+		EF4BA40A2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide_web_0.ttf"; sourceTree = "<group>"; };
+		EF4BA40E2AB1AD44005E7D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF4BA40F2AB1B0CB005E7D95 /* Pilote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilote.swift; sourceTree = "<group>"; };
+		EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecurie.swift; sourceTree = "<group>"; };
+		EF4BA4142AB1B0FD005E7D95 /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
+		EF4BA4162AB1B10F005E7D95 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		EFADECEA2AB25C42002D386D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EFADECEC2AB25C6B002D386D /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		EFADECEE2AB25C88002D386D /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
+		EFADECF02AB25CA7002D386D /* TracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksView.swift; sourceTree = "<group>"; };
+		EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "McLaren-SemiBold.ttf"; sourceTree = "<group>"; };
+		EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aston Martin-Regular.ttf"; sourceTree = "<group>"; };
+		EFADECF72AB26860002D386D /* F1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +80,12 @@
 		EF4BA3F52AB1A9A6005E7D95 /* F12025-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EF4BA40E2AB1AD44005E7D95 /* Info.plist */,
+				EF4BA4042AB1ACD4005E7D95 /* Font */,
+				EF4BA4072AB1ACFD005E7D95 /* Model */,
+				EF4BA4062AB1ACF3005E7D95 /* ViewModel */,
+				EF4BA4052AB1ACE2005E7D95 /* View */,
 				EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */,
-				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
 				EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */,
 				EF4BA3FC2AB1A9A8005E7D95 /* Preview Content */,
 			);
@@ -65,6 +98,57 @@
 				EF4BA3FD2AB1A9A8005E7D95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF4BA4042AB1ACD4005E7D95 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EFADECF22AB25CBD002D386D /* Numbers */,
+				EF4BA4082AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf */,
+				EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */,
+				EF4BA40A2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EF4BA4052AB1ACE2005E7D95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
+				EFADECEA2AB25C42002D386D /* HomeView.swift */,
+				EFADECEC2AB25C6B002D386D /* TeamsView.swift */,
+				EFADECEE2AB25C88002D386D /* StandingsView.swift */,
+				EFADECF02AB25CA7002D386D /* TracksView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF4BA4062AB1ACF3005E7D95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFADECF72AB26860002D386D /* F1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF4BA4072AB1ACFD005E7D95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BA40F2AB1B0CB005E7D95 /* Pilote.swift */,
+				EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */,
+				EF4BA4142AB1B0FD005E7D95 /* Pays.swift */,
+				EF4BA4162AB1B10F005E7D95 /* Circuit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFADECF22AB25CBD002D386D /* Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */,
+				EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */,
+			);
+			path = Numbers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +209,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4BA40C2AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf in Resources */,
+				EF4BA40B2AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf in Resources */,
+				EFADECF42AB25D85002D386D /* McLaren-SemiBold.ttf in Resources */,
+				EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */,
+				EF4BA40D2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf in Resources */,
 				EF4BA3FE2AB1A9A8005E7D95 /* Preview Assets.xcassets in Resources */,
 				EF4BA3FB2AB1A9A8005E7D95 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +226,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */,
+				EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */,
 				EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */,
+				EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */,
+				EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */,
+				EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */,
+				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
+				EFADECF12AB25CA7002D386D /* TracksView.swift in Sources */,
+				EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */,
 				EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */,
+				EFADECED2AB25C6B002D386D /* TeamsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +367,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"F12025-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F12025-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +396,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"F12025-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "F12025-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

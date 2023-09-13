@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Las Vegas.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
