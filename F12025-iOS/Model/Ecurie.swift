@@ -8,14 +8,23 @@
 import Foundation
 
 struct Ecurie {
-    var id_ecurie = UUID()
+    var id_ecurie: UUID
     var nom_ecurie: String
+    //var nom_complet: String
     var nationalite: Pays
+    var nb_pts: Int
+    
+    init(nom_ecurie: String, nationalite: Pays) {
+        self.id_ecurie = UUID()
+        self.nom_ecurie = nom_ecurie
+        self.nationalite = nationalite
+        self.nb_pts = 0
+    }
     
     static var allCases: [Ecurie] = [
-        Ecurie(nom_ecurie: "Oracle Red Bull", nationalite: .Autriche),
+        Ecurie(nom_ecurie: "Red Bull", nationalite: .Autriche),
         Ecurie(nom_ecurie: "Ferrari", nationalite: .Italie),
-        Ecurie(nom_ecurie: "Mercedes-AMG Petronas", nationalite: .Allemagne),
+        Ecurie(nom_ecurie: "Mercedes", nationalite: .Allemagne),
         Ecurie(nom_ecurie: "Alpine", nationalite: .France),
         Ecurie(nom_ecurie: "McLaren", nationalite: .GB),
         Ecurie(nom_ecurie: "Aston Martin", nationalite: .GB),
@@ -24,4 +33,8 @@ struct Ecurie {
         Ecurie(nom_ecurie: "Haas", nationalite: .USA),
         Ecurie(nom_ecurie: "Hugo Boss", nationalite: .Allemagne)
     ]
+    
+    mutating func equalsTo(ecurie: Ecurie) -> Bool {
+        return self.id_ecurie == ecurie.id_ecurie && self.nom_ecurie == ecurie.nom_ecurie && self.nationalite == ecurie.nationalite
+    }
 }

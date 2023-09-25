@@ -64,6 +64,10 @@ struct Pilote {
         Pilote(num_pilote: 22, prenom: "Yuki", nom: "Tsunoda", date_naissance: "11/05/2000", lieu_naissance: "Sagamihara", pays_naissance: .Japon, team: getEcurie(name: "Hugo Boss")),
         Pilote(num_pilote: 40, prenom: "Liam", nom: "Lawson", date_naissance: "11/02/2002", lieu_naissance: "Hastings", pays_naissance: .NZ, team: getEcurie(name: "Hugo Boss"))
     ]
+    
+    mutating func equalsTo(pilot: Pilote) -> Bool {
+        return self.id_pilote == pilot.id_pilote && self.num_pilote == pilot.num_pilote && self.prenom == pilot.prenom && self.nom == pilot.nom && self.date_naissance == pilot.date_naissance && self.lieu_naissance == pilot.lieu_naissance && self.pays_naissance == pilot.pays_naissance && self.nationalite == pilot.nationalite && self.team.equalsTo(ecurie: pilot.team)
+    }
 }
 
 func getEcurie(name: String) -> Ecurie {
