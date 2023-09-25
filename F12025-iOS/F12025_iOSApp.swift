@@ -12,6 +12,7 @@ struct F12025_iOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(F1ViewModel())
         }
     }
 }

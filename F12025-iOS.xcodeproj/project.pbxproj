@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */; };
+		EF0DBFB12AB8C10200D65013 /* PilotSprintStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFB02AB8C10200D65013 /* PilotSprintStandingView.swift */; };
+		EF0DBFB32AB8C11400D65013 /* TeamSprintStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFB22AB8C11400D65013 /* TeamSprintStandingView.swift */; };
+		EF13EC772AB2FAA400AD05A3 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC762AB2FAA400AD05A3 /* FlagView.swift */; };
+		EF13EC792AB300D500AD05A3 /* GPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC782AB300D500AD05A3 /* GPView.swift */; };
+		EF13EC7B2AB300F200AD05A3 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */; };
+		EF13EC7D2AB3209F00AD05A3 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC7C2AB3209F00AD05A3 /* TeamView.swift */; };
+		EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */; };
+		EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECBC2AB3572900AD05A3 /* PilotView.swift */; };
+		EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */; };
+		EF183A6F2AB4C08C00D5FCCD /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */; };
+		EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */; };
+		EF3E780E2AB48FF300C5C186 /* Ferrari-Outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */; };
 		EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */; };
 		EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */; };
 		EF4BA3FB2AB1A9A8005E7D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */; };
@@ -19,15 +32,40 @@
 		EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4142AB1B0FD005E7D95 /* Pays.swift */; };
 		EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4162AB1B10F005E7D95 /* Circuit.swift */; };
 		EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEA2AB25C42002D386D /* HomeView.swift */; };
-		EFADECED2AB25C6B002D386D /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEC2AB25C6B002D386D /* TeamsView.swift */; };
+		EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEC2AB25C6B002D386D /* AllTeamsView.swift */; };
 		EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEE2AB25C88002D386D /* StandingsView.swift */; };
-		EFADECF12AB25CA7002D386D /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF02AB25CA7002D386D /* TracksView.swift */; };
 		EFADECF42AB25D85002D386D /* McLaren-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */; };
 		EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */; };
 		EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF72AB26860002D386D /* F1ViewModel.swift */; };
+		EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */; };
+		EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */; };
+		EFDBD2662AB42EBD0085E237 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBD2652AB42EBD0085E237 /* TestView.swift */; };
+		EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */; };
+		EFDBD26B2AB448A20085E237 /* Mercedes-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */; };
+		EFDBD26C2AB448A20085E237 /* Williams-Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2692AB448A20085E237 /* Williams-Hollow.ttf */; };
+		EFDBD26E2AB44AF20085E237 /* HugoBoss-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD26D2AB44AF20085E237 /* HugoBoss-Regular.ttf */; };
+		EFDBD2702AB4641B0085E237 /* RedBull-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD26F2AB4641B0085E237 /* RedBull-Black.ttf */; };
+		EFDBD2722AB465E40085E237 /* Audi-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */; };
+		EFDCF27D2AC16BBE00D3C209 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF27C2AC16BBE00D3C209 /* Extensions.swift */; };
+		EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */; };
+		EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */; };
+		EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */; };
+		EFEE64842AB84DB200291C54 /* Classements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE64832AB84DB200291C54 /* Classements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoriesPilotView.swift; sourceTree = "<group>"; };
+		EF0DBFB02AB8C10200D65013 /* PilotSprintStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotSprintStandingView.swift; sourceTree = "<group>"; };
+		EF0DBFB22AB8C11400D65013 /* TeamSprintStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSprintStandingView.swift; sourceTree = "<group>"; };
+		EF13EC762AB2FAA400AD05A3 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		EF13EC782AB300D500AD05A3 /* GPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPView.swift; sourceTree = "<group>"; };
+		EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		EF13EC7C2AB3209F00AD05A3 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGPView.swift; sourceTree = "<group>"; };
+		EF13ECBC2AB3572900AD05A3 /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
+		EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alpine - Bold.ttf"; sourceTree = "<group>"; };
+		EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Résultat.swift"; sourceTree = "<group>"; };
+		EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ferrari-Outline.ttf"; sourceTree = "<group>"; };
 		EF4BA3F32AB1A9A6005E7D95 /* F12025-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F12025-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F12025_iOSApp.swift; sourceTree = "<group>"; };
 		EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,12 +80,25 @@
 		EF4BA4142AB1B0FD005E7D95 /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		EF4BA4162AB1B10F005E7D95 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
 		EFADECEA2AB25C42002D386D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		EFADECEC2AB25C6B002D386D /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		EFADECEC2AB25C6B002D386D /* AllTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTeamsView.swift; sourceTree = "<group>"; };
 		EFADECEE2AB25C88002D386D /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
-		EFADECF02AB25CA7002D386D /* TracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksView.swift; sourceTree = "<group>"; };
 		EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "McLaren-SemiBold.ttf"; sourceTree = "<group>"; };
 		EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aston Martin-Regular.ttf"; sourceTree = "<group>"; };
 		EFADECF72AB26860002D386D /* F1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1ViewModel.swift; sourceTree = "<group>"; };
+		EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotsStandingsView.swift; sourceTree = "<group>"; };
+		EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStandingsView.swift; sourceTree = "<group>"; };
+		EFDBD2652AB42EBD0085E237 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Haas-superitalic.ttf"; sourceTree = "<group>"; };
+		EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mercedes-Bold.ttf"; sourceTree = "<group>"; };
+		EFDBD2692AB448A20085E237 /* Williams-Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Williams-Hollow.ttf"; sourceTree = "<group>"; };
+		EFDBD26D2AB44AF20085E237 /* HugoBoss-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HugoBoss-Regular.ttf"; sourceTree = "<group>"; };
+		EFDBD26F2AB4641B0085E237 /* RedBull-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedBull-Black.ttf"; sourceTree = "<group>"; };
+		EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EFDCF27C2AC16BBE00D3C209 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPrix.swift; sourceTree = "<group>"; };
+		EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRiderView.swift; sourceTree = "<group>"; };
+		EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaractCircuitView.swift; sourceTree = "<group>"; };
+		EFEE64832AB84DB200291C54 /* Classements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +106,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF183A6F2AB4C08C00D5FCCD /* Localize_Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF13EC7E2AB322FA00AD05A3 /* Grand Prix */ = {
+			isa = PBXGroup;
+			children = (
+				EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */,
+				EF13EC782AB300D500AD05A3 /* GPView.swift */,
+				EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */,
+			);
+			path = "Grand Prix";
+			sourceTree = "<group>";
+		};
+		EF13EC7F2AB3230200AD05A3 /* Écuries */ = {
+			isa = PBXGroup;
+			children = (
+				EFADECEC2AB25C6B002D386D /* AllTeamsView.swift */,
+				EF13EC7C2AB3209F00AD05A3 /* TeamView.swift */,
+			);
+			path = "Écuries";
+			sourceTree = "<group>";
+		};
+		EF13EC802AB3230D00AD05A3 /* Classement */ = {
+			isa = PBXGroup;
+			children = (
+				EFADECEE2AB25C88002D386D /* StandingsView.swift */,
+				EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */,
+				EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */,
+				EF0DBFB02AB8C10200D65013 /* PilotSprintStandingView.swift */,
+				EF0DBFB22AB8C11400D65013 /* TeamSprintStandingView.swift */,
+			);
+			path = Classement;
+			sourceTree = "<group>";
+		};
+		EF13ECBB2AB3571600AD05A3 /* Pilotes */ = {
+			isa = PBXGroup;
+			children = (
+				EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */,
+				EF13ECBC2AB3572900AD05A3 /* PilotView.swift */,
+				EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */,
+			);
+			path = Pilotes;
+			sourceTree = "<group>";
+		};
 		EF4BA3EA2AB1A9A6005E7D95 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +181,7 @@
 				EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */,
 				EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */,
 				EF4BA3FC2AB1A9A8005E7D95 /* Preview Content */,
+				EFDCF27C2AC16BBE00D3C209 /* Extensions.swift */,
 			);
 			path = "F12025-iOS";
 			sourceTree = "<group>";
@@ -114,11 +208,15 @@
 		EF4BA4052AB1ACE2005E7D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */,
 				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
 				EFADECEA2AB25C42002D386D /* HomeView.swift */,
-				EFADECEC2AB25C6B002D386D /* TeamsView.swift */,
-				EFADECEE2AB25C88002D386D /* StandingsView.swift */,
-				EFADECF02AB25CA7002D386D /* TracksView.swift */,
+				EF13EC762AB2FAA400AD05A3 /* FlagView.swift */,
+				EFDBD2652AB42EBD0085E237 /* TestView.swift */,
+				EF13ECBB2AB3571600AD05A3 /* Pilotes */,
+				EF13EC802AB3230D00AD05A3 /* Classement */,
+				EF13EC7F2AB3230200AD05A3 /* Écuries */,
+				EF13EC7E2AB322FA00AD05A3 /* Grand Prix */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +236,9 @@
 				EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */,
 				EF4BA4142AB1B0FD005E7D95 /* Pays.swift */,
 				EF4BA4162AB1B10F005E7D95 /* Circuit.swift */,
+				EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */,
+				EFEE64832AB84DB200291C54 /* Classements.swift */,
+				EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +246,14 @@
 		EFADECF22AB25CBD002D386D /* Numbers */ = {
 			isa = PBXGroup;
 			children = (
+				EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */,
+				EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */,
+				EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */,
+				EFDBD26F2AB4641B0085E237 /* RedBull-Black.ttf */,
+				EFDBD26D2AB44AF20085E237 /* HugoBoss-Regular.ttf */,
+				EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */,
+				EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */,
+				EFDBD2692AB448A20085E237 /* Williams-Hollow.ttf */,
 				EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */,
 				EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */,
 			);
@@ -167,6 +276,9 @@
 			dependencies = (
 			);
 			name = "F12025-iOS";
+			packageProductDependencies = (
+				EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */,
+			);
 			productName = "F12025-iOS";
 			productReference = EF4BA3F32AB1A9A6005E7D95 /* F12025-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +307,9 @@
 				Base,
 			);
 			mainGroup = EF4BA3EA2AB1A9A6005E7D95;
+			packageReferences = (
+				EF183A6D2AB4C08C00D5FCCD /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+			);
 			productRefGroup = EF4BA3F42AB1A9A6005E7D95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -211,11 +326,19 @@
 			files = (
 				EF4BA40C2AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf in Resources */,
 				EF4BA40B2AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf in Resources */,
+				EFDBD2722AB465E40085E237 /* Audi-BoldItalic.ttf in Resources */,
+				EF3E780E2AB48FF300C5C186 /* Ferrari-Outline.ttf in Resources */,
 				EFADECF42AB25D85002D386D /* McLaren-SemiBold.ttf in Resources */,
+				EFDBD26B2AB448A20085E237 /* Mercedes-Bold.ttf in Resources */,
 				EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */,
+				EFDBD2702AB4641B0085E237 /* RedBull-Black.ttf in Resources */,
 				EF4BA40D2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf in Resources */,
+				EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */,
+				EFDBD26E2AB44AF20085E237 /* HugoBoss-Regular.ttf in Resources */,
 				EF4BA3FE2AB1A9A8005E7D95 /* Preview Assets.xcassets in Resources */,
 				EF4BA3FB2AB1A9A8005E7D95 /* Assets.xcassets in Resources */,
+				EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */,
+				EFDBD26C2AB448A20085E237 /* Williams-Hollow.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,16 +350,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */,
+				EF0DBFB32AB8C11400D65013 /* TeamSprintStandingView.swift in Sources */,
 				EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */,
+				EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */,
+				EF13EC7D2AB3209F00AD05A3 /* TeamView.swift in Sources */,
 				EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */,
+				EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */,
+				EFDCF27D2AC16BBE00D3C209 /* Extensions.swift in Sources */,
 				EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */,
 				EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */,
 				EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */,
 				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
-				EFADECF12AB25CA7002D386D /* TracksView.swift in Sources */,
+				EF13EC792AB300D500AD05A3 /* GPView.swift in Sources */,
+				EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */,
+				EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */,
+				EFEE64842AB84DB200291C54 /* Classements.swift in Sources */,
+				EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */,
+				EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */,
+				EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */,
 				EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */,
 				EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */,
-				EFADECED2AB25C6B002D386D /* TeamsView.swift in Sources */,
+				EF0DBFB12AB8C10200D65013 /* PilotSprintStandingView.swift in Sources */,
+				EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */,
+				EF13EC7B2AB300F200AD05A3 /* ItemsView.swift in Sources */,
+				EFDBD2662AB42EBD0085E237 /* TestView.swift in Sources */,
+				EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */,
+				EF13EC772AB2FAA400AD05A3 /* FlagView.swift in Sources */,
+				EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +577,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF183A6D2AB4C08C00D5FCCD /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF183A6D2AB4C08C00D5FCCD /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF4BA3EB2AB1A9A6005E7D95 /* Project object */;
 }
