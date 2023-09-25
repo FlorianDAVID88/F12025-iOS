@@ -9,7 +9,15 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Ferrari-Outline.ttf</string>
+		<string>Alpine - Bold.ttf</string>
+		<string>Audi-BoldItalic.ttf</string>
+		<string>Haas-superitalic.ttf</string>
+		<string>RedBull-Black.ttf</string>
+		<string>Williams-Hollow.ttf</string>
+		<string>Mercedes-Bold.ttf</string>
 		<string>Aston Martin-Regular.ttf</string>
+		<string>HugoBoss-Regular.ttf</string>
 		<string>McLaren-SemiBold.ttf</string>
 		<string>Formula1-Bold_web_0.ttf</string>
 		<string>Formula1-Regular_web_0.ttf</string>
