@@ -5,9 +5,21 @@
 //  Created by user234243 on 9/13/23.
 //
 
+import Localize_Swift
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: F1ViewModel
+
+    init() {
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: "Formula1", size: 14)!,
+            .textEffect: NSAttributedString.TextEffectStyle.letterpressStyle
+        ]
+        UITabBarItem.appearance().setTitleTextAttributes(attributes, for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes(attributes, for: .normal)
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -18,7 +30,7 @@ struct ContentView: View {
                             Text("Accueil")
                         }
                     
-                    TeamsView()
+                    AllTeamsView()
                         .tabItem {
                             Image("Teams")
                                 .resizable()
@@ -26,13 +38,13 @@ struct ContentView: View {
                             Text("Ecuries")
                         }
                     
-                    TracksView()
+                    AllGPView()
                         .tabItem {
                             Image("Tracks")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                            Text("Circuits")
+                            Text("Grand Prix")
                         }
                     
                     StandingsView()
@@ -42,15 +54,22 @@ struct ContentView: View {
                         }
                 }
             }
-            .navigationBarItems(leading:
-                Image("f1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 30),
-            trailing:
-                Image(systemName: "person.circle.fill")
-                    .foregroundColor(.red)
-            )
+            .navigationBarItems(leading: (
+                HStack {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.horizontal.3") // Icône du bouton de menu
+                            .imageScale(.large)
+                            .foregroundColor(.accentColor)
+                    }
+                    
+                    Image("f1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 20)
+                }
+            ))
         }
     }
 }
@@ -58,5 +77,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(F1ViewModel())
     }
 }
