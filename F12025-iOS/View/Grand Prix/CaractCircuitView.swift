@@ -14,14 +14,14 @@ struct CaractCircuitView: View {
     
     var body: some View {
         HStack(spacing: 10) {
-            Text(caract)
+            Text(LocalizedStringKey(caract))
                 .font(.custom("Formula1", size: 16))
             
             Spacer()
             
             HStack(alignment: .lastTextBaseline, spacing: 5) {
                 Text(content)
-                    .font(.custom("Formula1-Display-Bold", size: 30))
+                    .font(.custom("Formula1-Display-Bold", size: 28))
                 
                 Text(unity)
                     .font(.custom("Formula1", size: 14))

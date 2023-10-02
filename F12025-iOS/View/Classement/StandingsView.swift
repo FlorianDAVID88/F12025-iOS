@@ -17,7 +17,6 @@ struct StandingsView: View {
                 .font(.custom("Formula1-Display-Bold", size: 32))
             
             HStack {
-                Text("Classement :")
                 Picker("Classement", selection: $clt) {
                     Text("Pilotes")
                         .tag(0)

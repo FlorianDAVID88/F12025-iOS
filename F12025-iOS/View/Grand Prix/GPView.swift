@@ -15,12 +15,17 @@ struct GPView: View {
         ScrollView {
             VStack(spacing: 25) {
                 VStack(spacing: 10) {
-                    Text(gp.nom)
+                    Text(LocalizedStringKey(gp.nom))
                         .font(.custom("Formula1-Display-Bold", size: 26))
                         .multilineTextAlignment(.center)
                     
-                    Text(gp.circuit.nom)
-                        .font(.custom("Formula1", size: 18))
+                    Button {
+                        viewModel.locationGoogleMaps(location: gp.circuit.nom)
+                    } label: {
+                        Text(gp.circuit.nom)
+                            .font(.custom("Formula1", size: 18))
+                            .foregroundColor(.primary)
+                    }
                     
                     HStack(spacing: 10) {
                         Text(gp.circuit.ville)
@@ -37,7 +42,7 @@ struct GPView: View {
                 
                 VStack(spacing: 10) {
                     let winner = viewModel.getWinner(gp: gp)
-                    Text("Vainqueur 2025 : ")
+                    Text("Vainqueur 2025 :")
                         .font(.custom("Formula1", size: 18))
                     
                     NavigationLink(destination: PilotView(pilot: winner)) {

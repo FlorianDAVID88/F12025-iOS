@@ -11,27 +11,35 @@ struct PilotView: View {
     @State var pilot: Pilote
     
     var body: some View {
-        VStack(spacing: 20) {
-            HStack(spacing: 15) {
-                Text("\(pilot.prenom) \(pilot.nom)")
-                    .font(.custom("Formula1-Display-Bold", size: 32))
+        ScrollView {
+            VStack(spacing: 20) {
+                HStack(spacing: 15) {
+                    FlagView(pays: pilot.nationalite, height: 30)
+                    Text("\(pilot.prenom) \(pilot.nom)")
+                        .font(.custom("Formula1-Display-Bold", size: 32))
+                }
+                HStack(spacing: 15) {
+                    Image("\(pilot.prenom) \(pilot.nom)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200)
+                    
+                    Image("\(pilot.team.nom_ecurie)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                .padding(.horizontal)
                 
-                FlagView(pays: pilot.nationalite, height: 30)
-            }
-            HStack(spacing: 15) {
-                Image("\(pilot.prenom) \(pilot.nom)")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
+                NumberRiderView(pilot: pilot, fontSize: 48)           
+                VictoriesPilotView(pilot: pilot)
                 
-                Image("\(pilot.team.nom_ecurie)")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                VStack {
+                    Text("Classements")
+                        .font(.custom("Formula1", size: 24))
+                    
+                    GraphCltPilotView(pilote: pilot)
+                }
             }
-            .padding(.horizontal)
-            
-            NumberRiderView(pilot: pilot, fontSize: 48)           
-            VictoriesPilotView(pilot: pilot)
         }
     }
 }

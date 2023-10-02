@@ -26,7 +26,7 @@ struct TeamView: View {
                 
                 HStack {
                     FlagView(pays: team.nationalite, height: 25)
-                    Text(team.nationalite.rawValue)
+                    Text(LocalizedStringKey(team.nationalite.rawValue))
                         .font(.custom("Formula1", size: 16))
                 }
             }

@@ -23,7 +23,7 @@ struct ItemGPView: View {
             }
             
             VStack(alignment: .leading, spacing: 5) {
-                Text(gp.nom)
+                Text(LocalizedStringKey(gp.nom))
                     .bold()
                     .font(.custom("Formula1-Display-Bold", size: 20))
                 
@@ -73,14 +73,14 @@ struct ItemTeamView: View {
             Image(team.nom_ecurie)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100)
+                .frame(width: 100, height: 60)
                 .cornerRadius(10)
             
             VStack(alignment: .leading) {
                 Text(team.nom_ecurie)
                     .font(.custom("Formula1-Display-BOLD", size: 20))
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                 
                 FlagView(pays: team.nationalite, height: 20)
             }
@@ -94,7 +94,7 @@ struct ItemsView_Previews: PreviewProvider {
         VStack(spacing: 15) {
             ItemGPView(gp: GrandPrix.allCases[0])
             ItemPilotView(pilot: Pilote.allCases[15])
-            ItemTeamView(team: Ecurie.allCases[4])
+            ItemTeamView(team: Ecurie.allCases[7])
         }
     }
 }

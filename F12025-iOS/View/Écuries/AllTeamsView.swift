@@ -14,6 +14,7 @@ struct AllTeamsView: View {
         VStack {
             Text("Ecuries")
                 .font(.custom("Formula1-Display-Bold", size: 32))
+            
             ScrollView {
                 VStack(alignment: .leading, spacing: 15) {
                     ForEach(Ecurie.allCases, id: \.self.id_ecurie) { ecurie in
