@@ -68,6 +68,17 @@ struct Pilote {
     mutating func equalsTo(pilot: Pilote) -> Bool {
         return self.id_pilote == pilot.id_pilote && self.num_pilote == pilot.num_pilote && self.prenom == pilot.prenom && self.nom == pilot.nom && self.date_naissance == pilot.date_naissance && self.lieu_naissance == pilot.lieu_naissance && self.pays_naissance == pilot.pays_naissance && self.nationalite == pilot.nationalite && self.team.equalsTo(ecurie: pilot.team)
     }
+    
+    mutating func getResultsGP() -> [Int] {
+        let resultPilot = Résultat.allCases().filter { self.equalsTo(pilot: $0.pilot) }
+        var tabRes: [Int] = []
+        
+        for res in resultPilot {
+            tabRes.append(res.cltGP)
+        }
+        
+        return tabRes
+    }
 }
 
 func getEcurie(name: String) -> Ecurie {
