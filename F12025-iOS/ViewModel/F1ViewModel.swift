@@ -5,6 +5,7 @@
 //  Created by user234243 on 9/14/23.
 //
 
+import SwiftUI
 import Foundation
 
 class F1ViewModel: ObservableObject {
@@ -12,6 +13,13 @@ class F1ViewModel: ObservableObject {
     @Published var pilotes: [Pilote] = Pilote.allCases
     @Published var all_gp: [GrandPrix] = GrandPrix.allCases
     @Published var resultsF1: [Résultat] = Résultat.allCases()
+    
+    func locationGoogleMaps(location: String) {
+        if let encodedLocationName = location.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+           let url = URL(string: "https://www.google.com/maps/search/?q=\(encodedLocationName)") {
+            UIApplication.shared.open(url)
+        }
+    }
     
     func getPilotesFromEcurie(ecurie: Ecurie) -> [Pilote] {
         var pilots: [Pilote] = []
