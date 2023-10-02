@@ -18,6 +18,8 @@
 		EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECBC2AB3572900AD05A3 /* PilotView.swift */; };
 		EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */; };
 		EF183A6F2AB4C08C00D5FCCD /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */; };
+		EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF390D772AC7299000ACA70E /* SiteWeb.swift */; };
+		EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */; };
 		EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */; };
 		EF3E780E2AB48FF300C5C186 /* Ferrari-Outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */; };
 		EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */; };
@@ -31,14 +33,19 @@
 		EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */; };
 		EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4142AB1B0FD005E7D95 /* Pays.swift */; };
 		EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4162AB1B10F005E7D95 /* Circuit.swift */; };
+		EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6102C72ACAB9BA004DCD90 /* Extensions.swift */; };
+		EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAC8B032AC2C3F900FAA26E /* MenuView.swift */; };
 		EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEA2AB25C42002D386D /* HomeView.swift */; };
 		EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEC2AB25C6B002D386D /* AllTeamsView.swift */; };
 		EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEE2AB25C88002D386D /* StandingsView.swift */; };
 		EFADECF42AB25D85002D386D /* McLaren-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */; };
 		EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */; };
 		EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF72AB26860002D386D /* F1ViewModel.swift */; };
+		EFAEE4372AC34423000BDC00 /* GraphCltPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */; };
 		EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */; };
 		EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */; };
+		EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */; };
+		EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB177C2ACAA454003722A3 /* F1_RSView.swift */; };
 		EFDBD2662AB42EBD0085E237 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBD2652AB42EBD0085E237 /* TestView.swift */; };
 		EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */; };
 		EFDBD26B2AB448A20085E237 /* Mercedes-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */; };
@@ -46,11 +53,14 @@
 		EFDBD26E2AB44AF20085E237 /* HugoBoss-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD26D2AB44AF20085E237 /* HugoBoss-Regular.ttf */; };
 		EFDBD2702AB4641B0085E237 /* RedBull-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD26F2AB4641B0085E237 /* RedBull-Black.ttf */; };
 		EFDBD2722AB465E40085E237 /* Audi-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */; };
-		EFDCF27D2AC16BBE00D3C209 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF27C2AC16BBE00D3C209 /* Extensions.swift */; };
 		EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */; };
 		EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */; };
+		EFDCF2932AC18A4500D3C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDCF2952AC18A4500D3C209 /* Localizable.strings */; };
+		EFDCF2982AC18E2900D3C209 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */; };
 		EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */; };
 		EFEE64842AB84DB200291C54 /* Classements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE64832AB84DB200291C54 /* Classements.swift */; };
+		EFF76C342AC46B8900FAD9B0 /* Partenaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */; };
+		EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF76C362AC4708300FAD9B0 /* PartenaireView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,9 +74,11 @@
 		EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGPView.swift; sourceTree = "<group>"; };
 		EF13ECBC2AB3572900AD05A3 /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
 		EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alpine - Bold.ttf"; sourceTree = "<group>"; };
+		EF390D772AC7299000ACA70E /* SiteWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteWeb.swift; sourceTree = "<group>"; };
+		EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConcatURLView.swift; sourceTree = "<group>"; };
 		EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Résultat.swift"; sourceTree = "<group>"; };
 		EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ferrari-Outline.ttf"; sourceTree = "<group>"; };
-		EF4BA3F32AB1A9A6005E7D95 /* F12025-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F12025-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4BA3F32AB1A9A6005E7D95 /* F1 2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 2025.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F12025_iOSApp.swift; sourceTree = "<group>"; };
 		EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,14 +91,19 @@
 		EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecurie.swift; sourceTree = "<group>"; };
 		EF4BA4142AB1B0FD005E7D95 /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		EF4BA4162AB1B10F005E7D95 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		EF6102C72ACAB9BA004DCD90 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EFAC8B032AC2C3F900FAA26E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EFADECEA2AB25C42002D386D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EFADECEC2AB25C6B002D386D /* AllTeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTeamsView.swift; sourceTree = "<group>"; };
 		EFADECEE2AB25C88002D386D /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
 		EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "McLaren-SemiBold.ttf"; sourceTree = "<group>"; };
 		EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aston Martin-Regular.ttf"; sourceTree = "<group>"; };
 		EFADECF72AB26860002D386D /* F1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1ViewModel.swift; sourceTree = "<group>"; };
+		EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCltPilotView.swift; sourceTree = "<group>"; };
 		EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotsStandingsView.swift; sourceTree = "<group>"; };
 		EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStandingsView.swift; sourceTree = "<group>"; };
+		EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPartenairesView.swift; sourceTree = "<group>"; };
+		EFDB177C2ACAA454003722A3 /* F1_RSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_RSView.swift; sourceTree = "<group>"; };
 		EFDBD2652AB42EBD0085E237 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Haas-superitalic.ttf"; sourceTree = "<group>"; };
 		EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mercedes-Bold.ttf"; sourceTree = "<group>"; };
@@ -94,11 +111,15 @@
 		EFDBD26D2AB44AF20085E237 /* HugoBoss-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HugoBoss-Regular.ttf"; sourceTree = "<group>"; };
 		EFDBD26F2AB4641B0085E237 /* RedBull-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedBull-Black.ttf"; sourceTree = "<group>"; };
 		EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-BoldItalic.ttf"; sourceTree = "<group>"; };
-		EFDCF27C2AC16BBE00D3C209 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPrix.swift; sourceTree = "<group>"; };
 		EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRiderView.swift; sourceTree = "<group>"; };
+		EFDCF2942AC18A4500D3C209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EFDCF2962AC18A8B00D3C209 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
 		EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaractCircuitView.swift; sourceTree = "<group>"; };
 		EFEE64832AB84DB200291C54 /* Classements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classements.swift; sourceTree = "<group>"; };
+		EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partenaire.swift; sourceTree = "<group>"; };
+		EFF76C362AC4708300FAD9B0 /* PartenaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartenaireView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +171,7 @@
 				EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */,
 				EF13ECBC2AB3572900AD05A3 /* PilotView.swift */,
 				EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */,
+				EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */,
 			);
 			path = Pilotes;
 			sourceTree = "<group>";
@@ -165,7 +187,7 @@
 		EF4BA3F42AB1A9A6005E7D95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF4BA3F32AB1A9A6005E7D95 /* F12025-iOS.app */,
+				EF4BA3F32AB1A9A6005E7D95 /* F1 2025.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,9 +201,10 @@
 				EF4BA4062AB1ACF3005E7D95 /* ViewModel */,
 				EF4BA4052AB1ACE2005E7D95 /* View */,
 				EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */,
+				EF6102C72ACAB9BA004DCD90 /* Extensions.swift */,
 				EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */,
 				EF4BA3FC2AB1A9A8005E7D95 /* Preview Content */,
-				EFDCF27C2AC16BBE00D3C209 /* Extensions.swift */,
+				EFDCF2952AC18A4500D3C209 /* Localizable.strings */,
 			);
 			path = "F12025-iOS";
 			sourceTree = "<group>";
@@ -208,7 +231,10 @@
 		EF4BA4052AB1ACE2005E7D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EFDB177B2ACAA421003722A3 /* Réseaux sociaux */,
+				EFF76C352AC4705600FAD9B0 /* Partenaires */,
 				EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */,
+				EFAC8B032AC2C3F900FAA26E /* MenuView.swift */,
 				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
 				EFADECEA2AB25C42002D386D /* HomeView.swift */,
 				EF13EC762AB2FAA400AD05A3 /* FlagView.swift */,
@@ -217,6 +243,7 @@
 				EF13EC802AB3230D00AD05A3 /* Classement */,
 				EF13EC7F2AB3230200AD05A3 /* Écuries */,
 				EF13EC7E2AB322FA00AD05A3 /* Grand Prix */,
+				EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				EFADECF72AB26860002D386D /* F1ViewModel.swift */,
+				EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -239,6 +267,8 @@
 				EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */,
 				EFEE64832AB84DB200291C54 /* Classements.swift */,
 				EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */,
+				EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */,
+				EF390D772AC7299000ACA70E /* SiteWeb.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,12 +290,30 @@
 			path = Numbers;
 			sourceTree = "<group>";
 		};
+		EFDB177B2ACAA421003722A3 /* Réseaux sociaux */ = {
+			isa = PBXGroup;
+			children = (
+				EFDB177C2ACAA454003722A3 /* F1_RSView.swift */,
+			);
+			name = "Réseaux sociaux";
+			path = "Réseaux sociaux";
+			sourceTree = "<group>";
+		};
+		EFF76C352AC4705600FAD9B0 /* Partenaires */ = {
+			isa = PBXGroup;
+			children = (
+				EFF76C362AC4708300FAD9B0 /* PartenaireView.swift */,
+				EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */,
+			);
+			path = Partenaires;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF4BA3F22AB1A9A6005E7D95 /* F12025-iOS */ = {
+		EF4BA3F22AB1A9A6005E7D95 /* F1 2025 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF4BA4012AB1A9A8005E7D95 /* Build configuration list for PBXNativeTarget "F12025-iOS" */;
+			buildConfigurationList = EF4BA4012AB1A9A8005E7D95 /* Build configuration list for PBXNativeTarget "F1 2025" */;
 			buildPhases = (
 				EF4BA3EF2AB1A9A6005E7D95 /* Sources */,
 				EF4BA3F02AB1A9A6005E7D95 /* Frameworks */,
@@ -275,12 +323,12 @@
 			);
 			dependencies = (
 			);
-			name = "F12025-iOS";
+			name = "F1 2025";
 			packageProductDependencies = (
 				EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */,
 			);
 			productName = "F12025-iOS";
-			productReference = EF4BA3F32AB1A9A6005E7D95 /* F12025-iOS.app */;
+			productReference = EF4BA3F32AB1A9A6005E7D95 /* F1 2025.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -300,21 +348,23 @@
 			};
 			buildConfigurationList = EF4BA3EE2AB1A9A6005E7D95 /* Build configuration list for PBXProject "F12025-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = fr;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = EF4BA3EA2AB1A9A6005E7D95;
 			packageReferences = (
 				EF183A6D2AB4C08C00D5FCCD /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+				EFDB177A2ACA9AC4003722A3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = EF4BA3F42AB1A9A6005E7D95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF4BA3F22AB1A9A6005E7D95 /* F12025-iOS */,
+				EF4BA3F22AB1A9A6005E7D95 /* F1 2025 */,
 			);
 		};
 /* End PBXProject section */
@@ -337,6 +387,7 @@
 				EFDBD26E2AB44AF20085E237 /* HugoBoss-Regular.ttf in Resources */,
 				EF4BA3FE2AB1A9A8005E7D95 /* Preview Assets.xcassets in Resources */,
 				EF4BA3FB2AB1A9A8005E7D95 /* Assets.xcassets in Resources */,
+				EFDCF2932AC18A4500D3C209 /* Localizable.strings in Resources */,
 				EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */,
 				EFDBD26C2AB448A20085E237 /* Williams-Hollow.ttf in Resources */,
 			);
@@ -349,15 +400,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDCF2982AC18E2900D3C209 /* LanguageViewModel.swift in Sources */,
 				EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */,
 				EF0DBFB32AB8C11400D65013 /* TeamSprintStandingView.swift in Sources */,
 				EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */,
+				EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */,
 				EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */,
 				EF13EC7D2AB3209F00AD05A3 /* TeamView.swift in Sources */,
+				EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */,
 				EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */,
+				EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */,
 				EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */,
-				EFDCF27D2AC16BBE00D3C209 /* Extensions.swift in Sources */,
+				EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */,
 				EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */,
+				EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */,
+				EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */,
 				EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */,
 				EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */,
 				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
@@ -365,14 +422,17 @@
 				EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */,
 				EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */,
 				EFEE64842AB84DB200291C54 /* Classements.swift in Sources */,
+				EFAEE4372AC34423000BDC00 /* GraphCltPilotView.swift in Sources */,
 				EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */,
 				EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */,
 				EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */,
 				EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */,
+				EFF76C342AC46B8900FAD9B0 /* Partenaire.swift in Sources */,
 				EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */,
 				EF0DBFB12AB8C10200D65013 /* PilotSprintStandingView.swift in Sources */,
 				EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */,
 				EF13EC7B2AB300F200AD05A3 /* ItemsView.swift in Sources */,
+				EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */,
 				EFDBD2662AB42EBD0085E237 /* TestView.swift in Sources */,
 				EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */,
 				EF13EC772AB2FAA400AD05A3 /* FlagView.swift in Sources */,
@@ -382,11 +442,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		EFDCF2952AC18A4500D3C209 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDCF2942AC18A4500D3C209 /* en */,
+				EFDCF2962AC18A8B00D3C209 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		EF4BA3FF2AB1A9A8005E7D95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -447,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -567,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF4BA4012AB1A9A8005E7D95 /* Build configuration list for PBXNativeTarget "F12025-iOS" */ = {
+		EF4BA4012AB1A9A8005E7D95 /* Build configuration list for PBXNativeTarget "F1 2025" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF4BA4022AB1A9A8005E7D95 /* Debug */,
@@ -585,6 +659,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.0;
+			};
+		};
+		EFDB177A2ACA9AC4003722A3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
