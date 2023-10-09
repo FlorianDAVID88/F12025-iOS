@@ -19,6 +19,9 @@ struct MenuView: View {
                 NavigationLink(destination: F1_RSView()) {
                     Text("Réseaux sociaux F1")
                 }
+                NavigationLink(destination: EmptyView()) {
+                    Text("Monoplaces 2023")
+                }
             }
             .listStyle(.plain)
             .font(Font.custom("Formula1", size: 18))
@@ -52,13 +55,17 @@ struct MenuView: View {
                         Spacer()
                     }
                     
-                    Button {
-                        isConnected.toggle()
-                    } label: {
+                    NavigationLink(destination: EmptyView()) { //LogInView()
                         Text(isConnected ? "Se déconnecter" : "Connexion")
                             .font(Font.custom("Formula1", size: 18))
                             .underline()
                     }
+                    /*
+                    Button {
+                        isConnected.toggle()
+                    } label: {
+                        
+                    }*/
                 }
                 .padding(.top)
                 .padding(.horizontal, 25)

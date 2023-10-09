@@ -15,6 +15,7 @@ struct F1_RSView: View {
             ButtonRSView(name: "instagram", site: "https://www.instagram.com/f1/", name_user: "FORMULA 1®")
             ButtonRSView(name: "youtube", site: "https://www.youtube.com/F1", name_user: "FORMULA 1")
         }
+        .navigationBarTitle(LocalizedStringKey("Réseaux sociaux F1"), displayMode: .inline)
     }
     
     struct ButtonRSView: View {

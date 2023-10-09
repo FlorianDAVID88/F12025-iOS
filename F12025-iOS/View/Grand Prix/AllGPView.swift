@@ -24,6 +24,7 @@ struct AllGPView: View {
                     }
                 }
             }
+            .padding(.vertical)
         }
     }
 }

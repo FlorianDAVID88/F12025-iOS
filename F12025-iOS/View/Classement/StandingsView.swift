@@ -13,10 +13,10 @@ struct StandingsView: View {
     
     var body: some View {
         VStack {
-            Text("Classements")
-                .font(.custom("Formula1-Display-Bold", size: 32))
-            
             HStack {
+                Text(LocalizedStringKey("Classements")) + Text(" :")
+                    .font(.custom("Formula1", size: 20))
+                
                 Picker("Classement", selection: $clt) {
                     Text("Pilotes")
                         .tag(0)

@@ -32,6 +32,10 @@ struct TeamView: View {
             }
             
             VStack(alignment: .leading) {
+                Image("\(team.nom_ecurie) - Monoplace")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
                 Text("description_pilots")
                     .multilineTextAlignment(.leading)
                     .font(.custom("Formula1", size: 24))
@@ -59,6 +63,7 @@ struct TeamView: View {
             }
             .padding(.horizontal)
         }
+        .navigationBarTitle(Text("\(team.nom_ecurie)"), displayMode: .inline)
     }
 }
 

@@ -17,7 +17,7 @@
 		EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */; };
 		EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECBC2AB3572900AD05A3 /* PilotView.swift */; };
 		EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */; };
-		EF183A6F2AB4C08C00D5FCCD /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */; };
+		EF2EEFFB2AD3EBD900C60EBA /* Monoplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEFFA2AD3EBD900C60EBA /* Monoplace.swift */; };
 		EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF390D772AC7299000ACA70E /* SiteWeb.swift */; };
 		EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */; };
 		EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */; };
@@ -33,6 +33,11 @@
 		EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */; };
 		EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4142AB1B0FD005E7D95 /* Pays.swift */; };
 		EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4162AB1B10F005E7D95 /* Circuit.swift */; };
+		EF5E316B2ACAEB670087B0BB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316A2ACAEB670087B0BB /* GoogleSignIn */; };
+		EF5E316D2ACAEB670087B0BB /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316C2ACAEB670087B0BB /* GoogleSignInSwift */; };
+		EF5E316F2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF5E316E2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist */; };
+		EF5E31712ACAF0720087B0BB /* UserAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5E31702ACAF0720087B0BB /* UserAuthViewModel.swift */; };
+		EF5E31732ACAF1E80087B0BB /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5E31722ACAF1E80087B0BB /* LogInView.swift */; };
 		EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6102C72ACAB9BA004DCD90 /* Extensions.swift */; };
 		EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAC8B032AC2C3F900FAA26E /* MenuView.swift */; };
 		EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEA2AB25C42002D386D /* HomeView.swift */; };
@@ -46,7 +51,6 @@
 		EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */; };
 		EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */; };
 		EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB177C2ACAA454003722A3 /* F1_RSView.swift */; };
-		EFDBD2662AB42EBD0085E237 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBD2652AB42EBD0085E237 /* TestView.swift */; };
 		EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */; };
 		EFDBD26B2AB448A20085E237 /* Mercedes-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */; };
 		EFDBD26C2AB448A20085E237 /* Williams-Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2692AB448A20085E237 /* Williams-Hollow.ttf */; };
@@ -74,6 +78,7 @@
 		EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGPView.swift; sourceTree = "<group>"; };
 		EF13ECBC2AB3572900AD05A3 /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
 		EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alpine - Bold.ttf"; sourceTree = "<group>"; };
+		EF2EEFFA2AD3EBD900C60EBA /* Monoplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoplace.swift; sourceTree = "<group>"; };
 		EF390D772AC7299000ACA70E /* SiteWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteWeb.swift; sourceTree = "<group>"; };
 		EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConcatURLView.swift; sourceTree = "<group>"; };
 		EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Résultat.swift"; sourceTree = "<group>"; };
@@ -91,6 +96,9 @@
 		EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecurie.swift; sourceTree = "<group>"; };
 		EF4BA4142AB1B0FD005E7D95 /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		EF4BA4162AB1B10F005E7D95 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		EF5E316E2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		EF5E31702ACAF0720087B0BB /* UserAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewModel.swift; sourceTree = "<group>"; };
+		EF5E31722ACAF1E80087B0BB /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		EF6102C72ACAB9BA004DCD90 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFAC8B032AC2C3F900FAA26E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EFADECEA2AB25C42002D386D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -104,7 +112,6 @@
 		EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStandingsView.swift; sourceTree = "<group>"; };
 		EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPartenairesView.swift; sourceTree = "<group>"; };
 		EFDB177C2ACAA454003722A3 /* F1_RSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_RSView.swift; sourceTree = "<group>"; };
-		EFDBD2652AB42EBD0085E237 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Haas-superitalic.ttf"; sourceTree = "<group>"; };
 		EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mercedes-Bold.ttf"; sourceTree = "<group>"; };
 		EFDBD2692AB448A20085E237 /* Williams-Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Williams-Hollow.ttf"; sourceTree = "<group>"; };
@@ -127,7 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF183A6F2AB4C08C00D5FCCD /* Localize_Swift in Frameworks */,
+				EF5E316B2ACAEB670087B0BB /* GoogleSignIn in Frameworks */,
+				EF5E316D2ACAEB670087B0BB /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +189,7 @@
 			children = (
 				EF4BA3F52AB1A9A6005E7D95 /* F12025-iOS */,
 				EF4BA3F42AB1A9A6005E7D95 /* Products */,
+				EF5E31692ACAEB670087B0BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +204,7 @@
 		EF4BA3F52AB1A9A6005E7D95 /* F12025-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EF5E316E2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist */,
 				EF4BA40E2AB1AD44005E7D95 /* Info.plist */,
 				EF4BA4042AB1ACD4005E7D95 /* Font */,
 				EF4BA4072AB1ACFD005E7D95 /* Model */,
@@ -238,12 +248,12 @@
 				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
 				EFADECEA2AB25C42002D386D /* HomeView.swift */,
 				EF13EC762AB2FAA400AD05A3 /* FlagView.swift */,
-				EFDBD2652AB42EBD0085E237 /* TestView.swift */,
 				EF13ECBB2AB3571600AD05A3 /* Pilotes */,
 				EF13EC802AB3230D00AD05A3 /* Classement */,
 				EF13EC7F2AB3230200AD05A3 /* Écuries */,
 				EF13EC7E2AB322FA00AD05A3 /* Grand Prix */,
 				EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */,
+				EF5E31722ACAF1E80087B0BB /* LogInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +263,7 @@
 			children = (
 				EFADECF72AB26860002D386D /* F1ViewModel.swift */,
 				EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */,
+				EF5E31702ACAF0720087B0BB /* UserAuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -269,8 +280,16 @@
 				EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */,
 				EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */,
 				EF390D772AC7299000ACA70E /* SiteWeb.swift */,
+				EF2EEFFA2AD3EBD900C60EBA /* Monoplace.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EF5E31692ACAEB670087B0BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EFADECF22AB25CBD002D386D /* Numbers */ = {
@@ -325,7 +344,8 @@
 			);
 			name = "F1 2025";
 			packageProductDependencies = (
-				EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */,
+				EF5E316A2ACAEB670087B0BB /* GoogleSignIn */,
+				EF5E316C2ACAEB670087B0BB /* GoogleSignInSwift */,
 			);
 			productName = "F12025-iOS";
 			productReference = EF4BA3F32AB1A9A6005E7D95 /* F1 2025.app */;
@@ -374,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5E316F2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist in Resources */,
 				EF4BA40C2AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf in Resources */,
 				EF4BA40B2AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf in Resources */,
 				EFDBD2722AB465E40085E237 /* Audi-BoldItalic.ttf in Resources */,
@@ -403,6 +424,7 @@
 				EFDCF2982AC18E2900D3C209 /* LanguageViewModel.swift in Sources */,
 				EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */,
 				EF0DBFB32AB8C11400D65013 /* TeamSprintStandingView.swift in Sources */,
+				EF2EEFFB2AD3EBD900C60EBA /* Monoplace.swift in Sources */,
 				EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */,
 				EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */,
 				EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */,
@@ -410,6 +432,7 @@
 				EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */,
 				EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */,
 				EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */,
+				EF5E31732ACAF1E80087B0BB /* LogInView.swift in Sources */,
 				EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */,
 				EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */,
 				EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */,
@@ -417,6 +440,7 @@
 				EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */,
 				EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */,
 				EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */,
+				EF5E31712ACAF0720087B0BB /* UserAuthViewModel.swift in Sources */,
 				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
 				EF13EC792AB300D500AD05A3 /* GPView.swift in Sources */,
 				EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */,
@@ -433,7 +457,6 @@
 				EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */,
 				EF13EC7B2AB300F200AD05A3 /* ItemsView.swift in Sources */,
 				EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */,
-				EFDBD2662AB42EBD0085E237 /* TestView.swift in Sources */,
 				EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */,
 				EF13EC772AB2FAA400AD05A3 /* FlagView.swift in Sources */,
 				EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */,
@@ -672,10 +695,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EF183A6E2AB4C08C00D5FCCD /* Localize_Swift */ = {
+		EF5E316A2ACAEB670087B0BB /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EF183A6D2AB4C08C00D5FCCD /* XCRemoteSwiftPackageReference "Localize-Swift" */;
-			productName = Localize_Swift;
+			package = EFDB177A2ACA9AC4003722A3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		EF5E316C2ACAEB670087B0BB /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFDB177A2ACA9AC4003722A3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

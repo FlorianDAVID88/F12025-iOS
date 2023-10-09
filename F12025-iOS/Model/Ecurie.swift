@@ -34,6 +34,10 @@ struct Ecurie {
         Ecurie(nom_ecurie: "Hugo Boss", nationalite: .Allemagne)
     ]
     
+    static func getEcurieFromName(team: String) -> Ecurie {
+        return allCases.filter { $0.nom_ecurie == team }.first!
+    }
+    
     mutating func equalsTo(ecurie: Ecurie) -> Bool {
         return self.id_ecurie == ecurie.id_ecurie && self.nom_ecurie == ecurie.nom_ecurie && self.nationalite == ecurie.nationalite
     }

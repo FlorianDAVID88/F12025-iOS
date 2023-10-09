@@ -100,7 +100,7 @@ struct ContentView: View {
                             Color.white.opacity(0.75).ignoresSafeArea()
                             HStack {
                                 ZStack {
-                                    colorScheme == .dark ? Color.black.ignoresSafeArea() : Color.white.ignoresSafeArea()
+                                    Color.white.ignoresSafeArea()
                                     MenuView()
                                 }
                                 .frame(width: UIScreen.main.bounds.width * (2/3))

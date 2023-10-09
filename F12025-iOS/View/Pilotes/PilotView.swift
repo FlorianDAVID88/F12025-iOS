@@ -24,9 +24,11 @@ struct PilotView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200)
                     
-                    Image("\(pilot.team.nom_ecurie)")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                    NavigationLink(destination: TeamView(team: pilot.team)) {
+                        Image("\(pilot.team.nom_ecurie)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
                 }
                 .padding(.horizontal)
                 
@@ -41,6 +43,7 @@ struct PilotView: View {
                 }
             }
         }
+        .navigationBarTitle(Text("\(pilot.prenom) \(pilot.nom)"), displayMode: .inline)
     }
 }
 
