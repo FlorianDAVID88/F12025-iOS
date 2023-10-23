@@ -47,6 +47,8 @@
 		EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */; };
 		EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF72AB26860002D386D /* F1ViewModel.swift */; };
 		EFAEE4372AC34423000BDC00 /* GraphCltPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */; };
+		EFC1A13F2AD435F200D3E8DD /* AllMonoplacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1A13E2AD435F200D3E8DD /* AllMonoplacesView.swift */; };
+		EFC1A1412AD43B4000D3E8DD /* MonoplaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1A1402AD43B4000D3E8DD /* MonoplaceView.swift */; };
 		EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */; };
 		EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */; };
 		EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */; };
@@ -108,6 +110,8 @@
 		EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aston Martin-Regular.ttf"; sourceTree = "<group>"; };
 		EFADECF72AB26860002D386D /* F1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1ViewModel.swift; sourceTree = "<group>"; };
 		EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCltPilotView.swift; sourceTree = "<group>"; };
+		EFC1A13E2AD435F200D3E8DD /* AllMonoplacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMonoplacesView.swift; sourceTree = "<group>"; };
+		EFC1A1402AD43B4000D3E8DD /* MonoplaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoplaceView.swift; sourceTree = "<group>"; };
 		EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotsStandingsView.swift; sourceTree = "<group>"; };
 		EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStandingsView.swift; sourceTree = "<group>"; };
 		EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPartenairesView.swift; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 		EF4BA4052AB1ACE2005E7D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EFC1A13D2AD435D400D3E8DD /* Monoplaces */,
 				EFDB177B2ACAA421003722A3 /* Réseaux sociaux */,
 				EFF76C352AC4705600FAD9B0 /* Partenaires */,
 				EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */,
@@ -307,6 +312,15 @@
 				EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */,
 			);
 			path = Numbers;
+			sourceTree = "<group>";
+		};
+		EFC1A13D2AD435D400D3E8DD /* Monoplaces */ = {
+			isa = PBXGroup;
+			children = (
+				EFC1A13E2AD435F200D3E8DD /* AllMonoplacesView.swift */,
+				EFC1A1402AD43B4000D3E8DD /* MonoplaceView.swift */,
+			);
+			path = Monoplaces;
 			sourceTree = "<group>";
 		};
 		EFDB177B2ACAA421003722A3 /* Réseaux sociaux */ = {
@@ -435,6 +449,7 @@
 				EF5E31732ACAF1E80087B0BB /* LogInView.swift in Sources */,
 				EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */,
 				EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */,
+				EFC1A1412AD43B4000D3E8DD /* MonoplaceView.swift in Sources */,
 				EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */,
 				EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */,
 				EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */,
@@ -452,6 +467,7 @@
 				EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */,
 				EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */,
 				EFF76C342AC46B8900FAD9B0 /* Partenaire.swift in Sources */,
+				EFC1A13F2AD435F200D3E8DD /* AllMonoplacesView.swift in Sources */,
 				EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */,
 				EF0DBFB12AB8C10200D65013 /* PilotSprintStandingView.swift in Sources */,
 				EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */,
