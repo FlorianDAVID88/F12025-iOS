@@ -82,6 +82,5 @@ struct Pilote {
 }
 
 func getEcurie(name: String) -> Ecurie {
-    let team = Ecurie.allCases.filter { $0.nom_ecurie.contains(name) }
-    return team.count == 1 ? team[0] : Ecurie(nom_ecurie: "", nationalite: .None)
+    return Ecurie.allCases.filter { $0.nom_ecurie.contains(name) }.first ?? Ecurie(nom_ecurie: "", nationalite: .None, monoplace: "")
 }
