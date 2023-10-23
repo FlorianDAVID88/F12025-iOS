@@ -70,7 +70,7 @@ struct ContentView: View {
                         .tag(LocalizedStringKey("Classements").stringValue())
                 }
             }
-            .navigationBarTitle(titleTab, displayMode: .inline)
+            .navigationBarTitle(showMenu ? "" : titleTab, displayMode: .inline)
             .navigationBarItems(leading: (
                 HStack {
                     Button {
@@ -97,10 +97,11 @@ struct ContentView: View {
                 if showMenu {
                     GeometryReader { geometry in
                         ZStack(alignment: .leading) {
-                            Color.white.opacity(0.75).ignoresSafeArea()
+                            let color: Color = colorScheme == .dark ? .black : .white
+                            color.opacity(0.75).ignoresSafeArea()
                             HStack {
                                 ZStack {
-                                    Color.white.ignoresSafeArea()
+                                    color.ignoresSafeArea()
                                     MenuView()
                                 }
                                 .frame(width: UIScreen.main.bounds.width * (2/3))

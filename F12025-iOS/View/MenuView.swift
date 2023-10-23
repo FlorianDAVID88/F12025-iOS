@@ -19,8 +19,8 @@ struct MenuView: View {
                 NavigationLink(destination: F1_RSView()) {
                     Text("Réseaux sociaux F1")
                 }
-                NavigationLink(destination: EmptyView()) {
-                    Text("Monoplaces 2023")
+                NavigationLink(destination: AllMonoplacesView()) {
+                    Text("Monoplaces 2025")
                 }
             }
             .listStyle(.plain)
@@ -34,7 +34,7 @@ struct MenuView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50)
                     Button {
-                        if let url = URL(string: "https://apps.apple.com/app/formula-1"){
+                        if let url = URL(string: "https://apps.apple.com/fr/app/formula-1/id835022598"){
                             UIApplication.shared.open(url)
                         }
                     } label: {

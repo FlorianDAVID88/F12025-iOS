@@ -37,12 +37,16 @@ struct StandingsView: View {
             ScrollView {
                 if clt == 0 && sprint {
                     PilotSprintStandingView()
+                        .padding(.horizontal)
                 } else if clt == 0 {
                     PilotsStandingsView()
+                        .padding(.horizontal)
                 } else if sprint {
                     TeamSprintStandingView()
+                        .padding(.horizontal)
                 } else {
                     TeamsStandingsView()
+                        .padding(.horizontal)
                 }
             }
         }

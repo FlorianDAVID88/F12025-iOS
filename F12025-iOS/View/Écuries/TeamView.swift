@@ -32,9 +32,11 @@ struct TeamView: View {
             }
             
             VStack(alignment: .leading) {
-                Image("\(team.nom_ecurie) - Monoplace")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                NavigationLink(destination: MonoplaceView(monoplace: team.monoplace)) {
+                    Image("\(team.nom_ecurie) - Monoplace")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
                 
                 Text("description_pilots")
                     .multilineTextAlignment(.leading)
