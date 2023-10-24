@@ -54,7 +54,7 @@ Build and run the project on your device or (XCode) simulator
 #### Cars
 |                                  All cars view                                   | Car detail view |
 |:--------------------------------------------------------------------------------:| :---: |
-|<img src="/F12025-iOS/Screenshots/ListMonoplaces_fr.png" width="150" alt="RS">| <img src="/F12025-iOS/Screenshots/Home_fr.png" width="150" alt="CarDetail"> |
+|<img src="/F12025-iOS/Screenshots/ListMonoplaces_fr.png" width="150" alt="RS">| <img src="/F12025-iOS/Screenshots/MonoplaceView_fr.png" width="150" alt="CarDetail"> |
 
 ## ⛏️ Built Using
 - [Swift](https://developer.apple.com/swift/) - Programming language
