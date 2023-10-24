@@ -11,10 +11,7 @@ struct AllTeamsView: View {
     @EnvironmentObject var viewModel: F1ViewModel
     
     var body: some View {
-        VStack {
-            Text("Ecuries")
-                .font(.custom("Formula1-Display-Bold", size: 32))
-            
+        VStack {            
             ScrollView {
                 VStack(alignment: .leading, spacing: 15) {
                     ForEach(Ecurie.allCases, id: \.self.id_ecurie) { ecurie in

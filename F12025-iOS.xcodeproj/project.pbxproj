@@ -35,9 +35,6 @@
 		EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4162AB1B10F005E7D95 /* Circuit.swift */; };
 		EF5E316B2ACAEB670087B0BB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316A2ACAEB670087B0BB /* GoogleSignIn */; };
 		EF5E316D2ACAEB670087B0BB /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316C2ACAEB670087B0BB /* GoogleSignInSwift */; };
-		EF5E316F2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF5E316E2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist */; };
-		EF5E31712ACAF0720087B0BB /* UserAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5E31702ACAF0720087B0BB /* UserAuthViewModel.swift */; };
-		EF5E31732ACAF1E80087B0BB /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5E31722ACAF1E80087B0BB /* LogInView.swift */; };
 		EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6102C72ACAB9BA004DCD90 /* Extensions.swift */; };
 		EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAC8B032AC2C3F900FAA26E /* MenuView.swift */; };
 		EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECEA2AB25C42002D386D /* HomeView.swift */; };
@@ -98,9 +95,6 @@
 		EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecurie.swift; sourceTree = "<group>"; };
 		EF4BA4142AB1B0FD005E7D95 /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		EF4BA4162AB1B10F005E7D95 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
-		EF5E316E2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
-		EF5E31702ACAF0720087B0BB /* UserAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewModel.swift; sourceTree = "<group>"; };
-		EF5E31722ACAF1E80087B0BB /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		EF6102C72ACAB9BA004DCD90 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EFAC8B032AC2C3F900FAA26E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EFADECEA2AB25C42002D386D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -208,7 +202,6 @@
 		EF4BA3F52AB1A9A6005E7D95 /* F12025-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EF5E316E2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist */,
 				EF4BA40E2AB1AD44005E7D95 /* Info.plist */,
 				EF4BA4042AB1ACD4005E7D95 /* Font */,
 				EF4BA4072AB1ACFD005E7D95 /* Model */,
@@ -258,7 +251,6 @@
 				EF13EC7F2AB3230200AD05A3 /* Écuries */,
 				EF13EC7E2AB322FA00AD05A3 /* Grand Prix */,
 				EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */,
-				EF5E31722ACAF1E80087B0BB /* LogInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,7 +260,6 @@
 			children = (
 				EFADECF72AB26860002D386D /* F1ViewModel.swift */,
 				EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */,
-				EF5E31702ACAF0720087B0BB /* UserAuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -408,7 +399,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF5E316F2ACAED080087B0BB /* client_1089236979568-foagg0lmm8o3iin2hcf37cq779keeb8f.apps.googleusercontent.com.plist in Resources */,
 				EF4BA40C2AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf in Resources */,
 				EF4BA40B2AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf in Resources */,
 				EFDBD2722AB465E40085E237 /* Audi-BoldItalic.ttf in Resources */,
@@ -446,7 +436,6 @@
 				EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */,
 				EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */,
 				EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */,
-				EF5E31732ACAF1E80087B0BB /* LogInView.swift in Sources */,
 				EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */,
 				EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */,
 				EFC1A1412AD43B4000D3E8DD /* MonoplaceView.swift in Sources */,
@@ -455,7 +444,6 @@
 				EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */,
 				EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */,
 				EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */,
-				EF5E31712ACAF0720087B0BB /* UserAuthViewModel.swift in Sources */,
 				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
 				EF13EC792AB300D500AD05A3 /* GPView.swift in Sources */,
 				EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */,
