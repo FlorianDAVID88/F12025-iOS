@@ -60,4 +60,3 @@ Build and run the project on your device or (XCode) simulator
 - [Swift](https://developer.apple.com/swift/) - Programming language
 - [Xcode](https://developer.apple.com/xcode/) or [AppCode](https://www.jetbrains.com/fr-fr/objc/) - IDE
 - [Cocoapods](https://cocoapods.org/) - Dependency Management
-- [AccuWeather](https://developer.accuweather.com/) - Weather API
