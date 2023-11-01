@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct MenuView: View {
-    @State private var isConnected: Bool = false
+    @EnvironmentObject var signVM: SignUpViewModel
+    @State private var alertDisconnect = false
     
     var body: some View {
         VStack {
@@ -30,9 +32,11 @@ struct MenuView: View {
             VStack(spacing: 15) {
                 HStack(spacing: 30) {
                     Image("f1")
+                        .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50)
+
                     Button {
                         if let url = URL(string: "https://apps.apple.com/fr/app/formula-1/id835022598"){
                             UIApplication.shared.open(url)
@@ -46,26 +50,50 @@ struct MenuView: View {
                 .frame(height: 50)
                 
                 HStack(alignment: .center) {
-                    if isConnected {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 40)
-                        
-                        Spacer()
+                    if signVM.isLogged() {
+                        HStack {
+                            NavigationLink(destination: UserProfileView()) {
+                                if let url = signVM.currentUser?.photoURL {
+                                    WebImage(url: url)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(height: 40)
+                                        .cornerRadius(50)
+                                } else {
+                                    Image(systemName: "person.circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 40)
+                                }
+                            }
+                            
+                            Spacer()
+                            
+                            Button {
+                                alertDisconnect.toggle()
+                            } label: {
+                                Text("Se déconnecter")
+                                    .font(Font.custom("Formula1", size: 18))
+                                    .underline()
+                            }
+                            .alert(isPresented: $alertDisconnect) {
+                                Alert(
+                                    title: Text("Êtes-vous sûr de vouloir vous déconnecter ?"),
+                                    primaryButton: .default(Text("Oui"), action: {
+                                        signVM.disconnect()
+                                    }),
+                                    secondaryButton: .cancel(Text("Non"), action: {
+                                        alertDisconnect = false
+                                    }))
+                            }
+                        }
+                    } else {
+                        NavigationLink(destination: SignInUpView()) { //LogInView()
+                            Text("Connexion")
+                                .font(Font.custom("Formula1", size: 18))
+                                .underline()
+                        }
                     }
-                    
-                    NavigationLink(destination: EmptyView()) { //LogInView()
-                        Text(isConnected ? "Se déconnecter" : "Connexion")
-                            .font(Font.custom("Formula1", size: 18))
-                            .underline()
-                    }
-                    /*
-                    Button {
-                        isConnected.toggle()
-                    } label: {
-                        
-                    }*/
                 }
                 .padding(.top)
                 .padding(.horizontal, 25)
@@ -80,5 +108,6 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
+            .environmentObject(SignUpViewModel())
     }
 }
