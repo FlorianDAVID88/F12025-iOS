@@ -93,7 +93,6 @@ class F1ViewModel: ObservableObject {
     func getWinner(gp: GrandPrix) -> Pilote {
         var sameGP = gp
         let results = Résultat.allCases().filter { sameGP.equalsTo(gp: $0.gp) && $0.cltGP == 1 }
-        print(results.count)
         return results[0].pilot
     }
 }
