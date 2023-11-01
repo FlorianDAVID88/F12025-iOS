@@ -91,6 +91,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 20)
+                        .foregroundColor(.accentColor)
                 }
             ))
             .overlay {
@@ -124,5 +125,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(F1ViewModel())
             .environmentObject(LanguageViewModel())
+            .environmentObject(SignUpViewModel())
     }
 }

@@ -15,7 +15,8 @@ struct AllPartenairesView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 25)
-                
+                    .foregroundColor(.accentColor)
+
                 Text("Nos partenaires")
                     .font(.custom("Formula1-Display-Bold", size: 24))
             }

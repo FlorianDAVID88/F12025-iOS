@@ -14,7 +14,8 @@ struct HomeView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding(.horizontal, 30)
-            
+                .foregroundColor(.accentColor)
+
             Text("app_description")
                 .font(Font.custom("Formula1", size: 22))
             
