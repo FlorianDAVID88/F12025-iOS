@@ -94,3 +94,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# No import env variables
+F12025-iOS.xcodeproj/xcshareddata/xcschemes/F1 2025.xcscheme
