@@ -1,0 +1,39 @@
+/* 
+  GrandPrix.strings
+  F12025-iOS
+
+  Created by Florian DAVID on 11/11/2023.
+  
+*/
+
+"Grand Prix de Bahrein" = "Bahrain Grand Prix";
+"Grand Prix d'Arabie Saoudite" = "Saudi Arabian Grand Prix";
+"Grand Prix d'Australie" = "Australian Grand Prix";
+"Grand Prix du Japon" = "Japanese Grand Prix";
+"Grand Prix de China" = "Chinese Grand Prix";
+"Grand prix des États-Unis" = "United States Grand Prix";
+"Grand Prix du Canada" = "Canadian Grand Prix";
+"Grand Prix de Monaco" = "Monaco Grand Prix";
+"Grand Prix d'Espagne" = "Spanish Grand Prix";
+"Grand Prix de France" = "French Grand Prix";
+"Grand Prix d'Autriche" = "Austrian Grand GP";
+"Grand Prix de Grande-Bretagne" = "British Grand Prix";
+"Grand Prix de Belgique" = "Belgian Grand Prix";
+"Grand Prix d'Afrique du Sud" = "South African Grand Prix";
+"Grand Prix des Pays-Bas" = "Dutch Grand Prix";
+"Grand Prix d'Italie" = "Italian Grand Prix";
+"Grand Prix de Malaisie" = "Malaysian Grans Prix";
+"Grand Prix de Singapour" = "Singapore Grand Prix";
+"Grand Prix d'Argentine" = "Argentinian Grand Prix";
+"Grand Prix du Mexique" = "Mexican Grand Prix";
+"Grand Prix de Las Vegas" = "Las Vegas Grand Prix";
+"Grand Prix du Brésil" = "Brazilian Grand Prix";
+"Grand Prix d'Abu Dhabi" = "Abu Dhabi Grand Prix";
+
+// Caracteristics
+"Longueur du circuit" = "Circuit Length";
+"Nombre de tours" = "Number of Laps";
+"Distance à parcourir" = "Race Distance";
+"Nombre de virages" = "Number of turns";
+"Zones de DRS" = "DRS Zones";
+"Vainqueur 2025 :" = "2025 Winner :";

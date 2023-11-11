@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  F12025-iOS
+
+  Created by Florian DAVID on 9/25/23.
+  
+*/
+
+"app_description" = "Les temps morts ? Pas de temps pour cela. Un grand match ? Nous en faisons 23 par an. Ce n'est pas un sport ordinaire. C'est la Formule 1.";
+"find_more_info" = "Pour en savoir plus, consulter le site : ";
+"description_pilots" = "Pilotes :";
+"Results" = "Résultats";
+
+// Positions
+"th" = "e";
+"rd" = "e";
+"nd" = "e";
+"st" = "er";

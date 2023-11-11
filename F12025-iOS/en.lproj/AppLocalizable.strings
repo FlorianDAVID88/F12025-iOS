@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  F12025-iOS
+
+  Created by Florian DAVID on 9/25/23.
+  
+*/
+
+"app_description" = "Time outs ? No time for that. Big Game ? We do 23 a year. This is no ordinary sport. This is Formula 1.";
+"find_more_info" = "For more information, visit : ";
+"description_pilots" = "Pilots :";
+
+"Pilotes" = "Pilots";
+"Constructeurs" = "Teams";
+"Général" = "Overall";
+
+// TabView
+"Accueil" = "Home";
+"Ecuries" = "Teams";
+"Classements" = "Standings";
+
+// Menu
+"Nos partenaires" = "Our partners";
+"Réseaux sociaux F1" = "F1 social networks";
+"Monoplaces 2025" = "2025 F1 cars";
+"Connexion" = "Connection";
+"Se déconnecter" = "Disconnect";

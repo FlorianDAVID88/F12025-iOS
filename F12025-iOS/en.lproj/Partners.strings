@@ -1,97 +1,11 @@
 /* 
-  Localizable.strings
+  Partners.strings
   F12025-iOS
 
-  Created by user234243 on 9/25/23.
+  Created by Florian DAVID on 11/11/2023.
   
 */
 
-"app_description" = "Time outs ? No time for that. Big Game ? We do 23 a year. This is no ordinary sport. This is Formula 1.";
-"find_more_info" = "For more information, visit : ";
-"description_pilots" = "Pilots :";
-"Pilotes" = "Pilots";
-"Constructeurs" = "Teams";
-"Général" = "Overall";
-
-//Grand Prix
-"Grand Prix de Bahrein" = "Bahrain Grand Prix";
-"Grand Prix d'Arabie Saoudite" = "Saudi Arabian Grand Prix";
-"Grand Prix d'Australie" = "Australian Grand Prix";
-"Grand Prix du Japon" = "Japanese Grand Prix";
-"Grand Prix de China" = "Chinese Grand Prix";
-"Grand prix des États-Unis" = "United States Grand Prix";
-"Grand Prix du Canada" = "Canadian Grand Prix";
-"Gand Prix de Monaco" = "Monaco Grand Prix";
-"Grand Prix d'Espagne" = "Spanish Grand Prix";
-"Grand Prix de France" = "French Grand Prix";
-"Grand Prix d'Autriche" = "Austrian Grand GP";
-"Grand Prix de Grande-Bretagne" = "British Grand Prix";
-"Grand Prix de Belgique" = "Belgian Grand Prix";
-"Grand Prix d'Afrique du Sud" = "South African Grand Prix";
-"Grand Prix des Pays-Bas" = "Dutch Grand Prix";
-"Grand Prix d'Italie" = "Italian Grand Prix";
-"Grand Prix de Malaisie" = "Malaysian Grans Prix";
-"Grand Prix de Singapour" = "Singapore Grand Prix";
-"Grand Prix d'Argentine" = "Argentinian Grand Prix";
-"Grand Prix du Mexique" = "Mexican Grand Prix";
-"Grand Prix de Las Vegas" = "Las Vegas Grand Prix";
-"Grand Prix du Brésil" = "Brazilian Grand Prix";
-"Grand Prix d'Abu Dhabi" = "Abu Dhabi Grand Prix";
-
-//Grand Prix Caracteristics
-"Longueur du circuit" = "Circuit Length";
-"Nombre de tours" = "Number of Laps";
-"Distance à parcourir" = "Race Distance";
-"Nombre de virages" = "Number of turns";
-"Zones de DRS" = "DRS Zones";
-"Vainqueur 2025 :" = "2025 Winner :";
-
-//TabView
-"Accueil" = "Home";
-"Ecuries" = "Teams";
-"Classements" = "Standings";
-
-//Pays
-"Afrique du Sud" = "South Africa";
-"Allemagne" = "Germany";
-"Arabie Saoudite" = "Saudi Arabia";
-"Argentine" = "Argentina";
-"Australie" = "Australia";
-"Autriche" = "Austria";
-"Belgique" = "Belgium";
-"Brésil" = "Brazil";
-"Chine" = "China";
-"Danemark" = "Denmark";
-"Espagne" = "Spain";
-"Finlande" = "Finland";
-"Grande-Bretagne" = "Great Britain";
-"Israël" = "Israel";
-"Italie" = "Italia";
-"Japon" = "Japan";
-"Malaisie" = "Malaysia";
-"Mexique" = "Mexico";
-"Nouvelle-Zélande" = "New Zealand";
-"Pays-Bas" = "Netherlands";
-"Singapour" = "Singapore";
-"Suisse" = "Switzerland";
-"Émirats Arabes Unis" = "UAE";
-"États-Unis" = "United States";
-"Thaïlande" = "Thailand";
-
-//Menu
-"Nos partenaires" = "Our partners";
-"Réseaux sociaux F1" = "F1 social networks";
-"Monoplaces 2025" = "2025 F1 cars";
-"Connexion" = "Connection";
-"Se déconnecter" = "Disconnect";
-
-//Types partenaires
-"Partenaire mondial" = "Global Partner";
-"Partenaire officiel" = "Official Partner";
-"Partenaire régional" = "Regional Partner";
-"Fournisseur officiel" = "Official Provider";
-
-//Partenaires
 "188BET_desc" = "188BET is a leading online bookmaker licensed and regulated by the Isle of Man Gambling Supervision Commission. 188BET offers betting in multiple languages on a wide range of products including Sports, eSports, Progressive Slots, Casino, Poker, Mahjong and many more. For more information visit ";
 
 "AlphaTauri_desc" = "AlphaTauri is the Official Premium Fashion Apparel Supplier of Formula 1 and responsible for dressing the F1 team, including senior staff and F1 presenters. AlphaTauri is a premium fashion brand founded by Red Bull, which fuses fashion with function. The brand combines design and premium materials with textile innovations, adding value to both body and mind.
@@ -187,3 +101,11 @@ For more information, visit ";
 Tata Communications enjoys a longstanding relationship with Formula 1, enabling reach and delivery to millions of fans worldwide through low latency broadcast ready network and media native cloud solutions, tailored for global sports events worldwide. We bring fully managed video contribution services aggregating live broadcast feeds from venues globally to F1's Remote Technical Centre in London and for global distribution for various rights holding broadcasters. The low latency and remote operation capabilities allow F1 to analyse race data and produce stunning broadcast productions while supporting the sport's drive to remain agile and sustainable. Tata Communications is on a mission of empowering F1 for tomorrow, today. For more information, please visit ";
 
 "Workday_desc" = "Workday is a leading provider of enterprise cloud applications for finance and human resources, helping customers adapt and thrive in a changing world. Workday applications for financial management, human resources, planning, spend management, and analytics have been adopted by thousands of organizations around the world and across industries - from medium-sized businesses to more than 50% of the Fortune 500. For more information about Workday, visit ";
+
+
+
+// Types
+"Partenaire mondial" = "Global Partner";
+"Partenaire officiel" = "Official Partner";
+"Partenaire régional" = "Regional Partner";
+"Fournisseur officiel" = "Official Provider";

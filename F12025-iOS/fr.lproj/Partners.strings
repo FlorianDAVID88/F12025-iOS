@@ -1,15 +1,11 @@
 /* 
-  Localizable.strings
+  Partners.strings
   F12025-iOS
 
-  Created by user234243 on 9/25/23.
+  Created by Florian DAVID on 11/11/2023.
   
 */
-"app_description" = "Les temps morts ? Pas de temps pour cela. Un grand match ? Nous en faisons 23 par an. Ce n'est pas un sport ordinaire. C'est la Formule 1.";
-"find_more_info" = "Pour en savoir plus, consulter le site : ";
-"description_pilots" = "Pilotes :";
 
-//Partenaires
 "188BET_desc" = "188BET est un libraire en ligne de premier plan agréé et réglementé par la Commission de supervision des jeux d'argent et de hasard de l'île de Man. 188BET propose des paris en plusieurs langues sur une large gamme de produits, y compris le sport, l'eSport, les créneaux horaires progressifs, les casinos, le poker, le Mahjong et bien d'autres. Pour de plus amples informations, veuillez consulter le site ";
 
 "AlphaTauri_desc" = "AlphaTauri est le fournisseur officiel de vêtements de mode Premium de Formule 1 et est responsable de l'habillage de l'équipe de la F1, y compris les hauts fonctionnaires et les présentateurs de F1. AlphaTauri est une marque de mode haut de gamme fondée par Red Bull, qui fusionne la mode avec fonction. La marque combine des matériaux de conception et de qualité supérieure avec des innovations textiles, ajoutant de la valeur à la fois au corps et à l'esprit.
