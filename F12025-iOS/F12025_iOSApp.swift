@@ -2,7 +2,7 @@
 //  F12025_iOSApp.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/13/23.
+//  Created by Florian DAVID on 9/13/23.
 //
 
 import SwiftUI
@@ -32,9 +32,9 @@ struct F12025_iOSApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(F1ViewModel())
-                .environmentObject(LanguageViewModel())
                 .environmentObject(SignUpViewModel())
-               .navigationViewStyle(.stack)
+                .environmentObject(APIViewModel())
+                .navigationViewStyle(.stack)
         }
     }
 }

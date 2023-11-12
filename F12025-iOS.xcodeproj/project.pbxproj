@@ -7,20 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74674602B0000CD005AC39D /* GrandPrix.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674622B0000CD005AC39D /* GrandPrix.strings */; };
+		E74674662B0001C6005AC39D /* Partners.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674682B0001C6005AC39D /* Partners.strings */; };
+		E746746C2B000A75005AC39D /* Countries.strings in Resources */ = {isa = PBXBuildFile; fileRef = E746746E2B000A75005AC39D /* Countries.strings */; };
+		E74674712B000AFA005AC39D /* Car.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674732B000AFA005AC39D /* Car.strings */; };
+		E74674762B001EC0005AC39D /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74674752B001EC0005AC39D /* ResultsView.swift */; };
+		E769C71D2AF5C31600FB0CE5 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */; };
+		E77269922AF6881000C9F0B8 /* ItemTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269912AF6881000C9F0B8 /* ItemTeamView.swift */; };
+		E77269942AF6948C00C9F0B8 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269932AF6948C00C9F0B8 /* TeamView.swift */; };
+		E77269962AF694FC00C9F0B8 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269952AF694FC00C9F0B8 /* FlagView.swift */; };
+		E7977A8D2AF44A9800536A13 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7977A8C2AF44A9800536A13 /* SignUpView.swift */; };
+		E7977A912AF45E3B00536A13 /* SliderSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7977A902AF45E3B00536A13 /* SliderSignView.swift */; };
+		E79A20C92AF6DFCF0012BE0F /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A20C82AF6DFCF0012BE0F /* PilotView.swift */; };
+		E79A20CB2AF6FDF90012BE0F /* ItemGPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A20CA2AF6FDF90012BE0F /* ItemGPView.swift */; };
+		E79A20CD2AF702BA0012BE0F /* GPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A20CC2AF702BA0012BE0F /* GPView.swift */; };
+		E79E41A52AFA3A6400C6F9DE /* GraphCltPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E41A42AFA3A6400C6F9DE /* GraphCltPilotView.swift */; };
+		E79E41A72AFA40CC00C6F9DE /* PartnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E41A62AFA40CC00C6F9DE /* PartnerView.swift */; };
+		E79E41A92AFA5B8200C6F9DE /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E41A82AFA5B8200C6F9DE /* CarView.swift */; };
+		E79E41AB2AFA5E8500C6F9DE /* ItemCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E41AA2AFA5E8500C6F9DE /* ItemCarView.swift */; };
+		E7A2541A2AF51E2000A0C678 /* F1Bold.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A254192AF51E1F00A0C678 /* F1Bold.swift */; };
+		E7A2541C2AF51E3B00A0C678 /* F1Regular.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2541B2AF51E3B00A0C678 /* F1Regular.swift */; };
+		E7A2541E2AF51E4C00A0C678 /* F1Wide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2541D2AF51E4C00A0C678 /* F1Wide.swift */; };
 		EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */; };
-		EF0DBFB12AB8C10200D65013 /* PilotSprintStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFB02AB8C10200D65013 /* PilotSprintStandingView.swift */; };
-		EF0DBFB32AB8C11400D65013 /* TeamSprintStandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFB22AB8C11400D65013 /* TeamSprintStandingView.swift */; };
-		EF13EC772AB2FAA400AD05A3 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC762AB2FAA400AD05A3 /* FlagView.swift */; };
-		EF13EC792AB300D500AD05A3 /* GPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC782AB300D500AD05A3 /* GPView.swift */; };
-		EF13EC7B2AB300F200AD05A3 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */; };
-		EF13EC7D2AB3209F00AD05A3 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13EC7C2AB3209F00AD05A3 /* TeamView.swift */; };
 		EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */; };
-		EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECBC2AB3572900AD05A3 /* PilotView.swift */; };
 		EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */; };
-		EF2EEFFB2AD3EBD900C60EBA /* Monoplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEFFA2AD3EBD900C60EBA /* Monoplace.swift */; };
-		EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF390D772AC7299000ACA70E /* SiteWeb.swift */; };
+		EF2EEFFB2AD3EBD900C60EBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEFFA2AD3EBD900C60EBA /* Car.swift */; };
 		EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */; };
-		EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */; };
+		EF3AB24E2AB5DDE800BDDA9A /* ResultCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB24D2AB5DDE800BDDA9A /* ResultCourse.swift */; };
 		EF3E780E2AB48FF300C5C186 /* Ferrari-Outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */; };
 		EF43C7B62AF2D8EA00AECC25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF43C7B52AF2D8EA00AECC25 /* GoogleService-Info.plist */; };
 		EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */; };
@@ -30,17 +43,16 @@
 		EF4BA40B2AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA4082AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf */; };
 		EF4BA40C2AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */; };
 		EF4BA40D2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF4BA40A2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf */; };
-		EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA40F2AB1B0CB005E7D95 /* Pilote.swift */; };
-		EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */; };
-		EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4142AB1B0FD005E7D95 /* Pays.swift */; };
-		EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4162AB1B10F005E7D95 /* Circuit.swift */; };
+		EF4BA4102AB1B0CB005E7D95 /* Pilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA40F2AB1B0CB005E7D95 /* Pilot.swift */; };
+		EF4BA4132AB1B0EC005E7D95 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4122AB1B0EC005E7D95 /* Team.swift */; };
+		EF4BA4152AB1B0FD005E7D95 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BA4142AB1B0FD005E7D95 /* Country.swift */; };
 		EF5E316B2ACAEB670087B0BB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316A2ACAEB670087B0BB /* GoogleSignIn */; };
 		EF5E316D2ACAEB670087B0BB /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316C2ACAEB670087B0BB /* GoogleSignInSwift */; };
 		EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6102C72ACAB9BA004DCD90 /* Extensions.swift */; };
 		EF7126702AED2C0600880E9A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF71266F2AED2C0600880E9A /* FirebaseAuth */; };
 		EF7126722AED2DB600880E9A /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126712AED2DB600880E9A /* LogInViewModel.swift */; };
 		EF7126742AED2F5800880E9A /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126732AED2F5800880E9A /* AppUtilities.swift */; };
-		EF7126762AED37B100880E9A /* SignInUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126752AED37B100880E9A /* SignInUpView.swift */; };
+		EF7126762AED37B100880E9A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126752AED37B100880E9A /* SignInView.swift */; };
 		EF71267F2AED59B500880E9A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EF71267E2AED59B500880E9A /* SDWebImageSwiftUI */; };
 		EF7126812AED5ABF00880E9A /* UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126802AED5ABF00880E9A /* UserApp.swift */; };
 		EF7126842AED6CDE00880E9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126832AED6CDE00880E9A /* UserProfileView.swift */; };
@@ -51,12 +63,10 @@
 		EFADECF42AB25D85002D386D /* McLaren-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */; };
 		EFADECF62AB260AA002D386D /* Aston Martin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */; };
 		EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFADECF72AB26860002D386D /* F1ViewModel.swift */; };
-		EFAEE4372AC34423000BDC00 /* GraphCltPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */; };
-		EFC1A13F2AD435F200D3E8DD /* AllMonoplacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1A13E2AD435F200D3E8DD /* AllMonoplacesView.swift */; };
-		EFC1A1412AD43B4000D3E8DD /* MonoplaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1A1402AD43B4000D3E8DD /* MonoplaceView.swift */; };
+		EFC1A13F2AD435F200D3E8DD /* AllCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1A13E2AD435F200D3E8DD /* AllCarsView.swift */; };
 		EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */; };
 		EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */; };
-		EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */; };
+		EFD61F7A2AC6F6DD0011EBC0 /* AllPartnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD61F792AC6F6DD0011EBC0 /* AllPartnersView.swift */; };
 		EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDB177C2ACAA454003722A3 /* F1_RSView.swift */; };
 		EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */; };
 		EFDBD26B2AB448A20085E237 /* Mercedes-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */; };
@@ -66,29 +76,41 @@
 		EFDBD2722AB465E40085E237 /* Audi-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */; };
 		EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */; };
 		EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */; };
-		EFDCF2932AC18A4500D3C209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDCF2952AC18A4500D3C209 /* Localizable.strings */; };
-		EFDCF2982AC18E2900D3C209 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */; };
+		EFDCF2932AC18A4500D3C209 /* AppLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDCF2952AC18A4500D3C209 /* AppLocalizable.strings */; };
 		EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */; };
-		EFEE64842AB84DB200291C54 /* Classements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE64832AB84DB200291C54 /* Classements.swift */; };
-		EFF76C342AC46B8900FAD9B0 /* Partenaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */; };
-		EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF76C362AC4708300FAD9B0 /* PartenaireView.swift */; };
+		EFF76C342AC46B8900FAD9B0 /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF76C332AC46B8900FAD9B0 /* Partner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74674612B0000CD005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GrandPrix.strings; sourceTree = "<group>"; };
+		E74674672B0001C6005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Partners.strings; sourceTree = "<group>"; };
+		E74674692B0001C7005AC39D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Partners.strings; sourceTree = "<group>"; };
+		E746746D2B000A75005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Countries.strings; sourceTree = "<group>"; };
+		E74674722B000AFA005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Car.strings; sourceTree = "<group>"; };
+		E74674742B000AFC005AC39D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Car.strings; sourceTree = "<group>"; };
+		E74674752B001EC0005AC39D /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
+		E77269912AF6881000C9F0B8 /* ItemTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTeamView.swift; sourceTree = "<group>"; };
+		E77269932AF6948C00C9F0B8 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		E77269952AF694FC00C9F0B8 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		E7977A8C2AF44A9800536A13 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E7977A902AF45E3B00536A13 /* SliderSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSignView.swift; sourceTree = "<group>"; };
+		E79A20C82AF6DFCF0012BE0F /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
+		E79A20CA2AF6FDF90012BE0F /* ItemGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGPView.swift; sourceTree = "<group>"; };
+		E79A20CC2AF702BA0012BE0F /* GPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPView.swift; sourceTree = "<group>"; };
+		E79E41A42AFA3A6400C6F9DE /* GraphCltPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCltPilotView.swift; sourceTree = "<group>"; };
+		E79E41A62AFA40CC00C6F9DE /* PartnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerView.swift; sourceTree = "<group>"; };
+		E79E41A82AFA5B8200C6F9DE /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		E79E41AA2AFA5E8500C6F9DE /* ItemCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCarView.swift; sourceTree = "<group>"; };
+		E7A254192AF51E1F00A0C678 /* F1Bold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Bold.swift; sourceTree = "<group>"; };
+		E7A2541B2AF51E3B00A0C678 /* F1Regular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Regular.swift; sourceTree = "<group>"; };
+		E7A2541D2AF51E4C00A0C678 /* F1Wide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Wide.swift; sourceTree = "<group>"; };
 		EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoriesPilotView.swift; sourceTree = "<group>"; };
-		EF0DBFB02AB8C10200D65013 /* PilotSprintStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotSprintStandingView.swift; sourceTree = "<group>"; };
-		EF0DBFB22AB8C11400D65013 /* TeamSprintStandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSprintStandingView.swift; sourceTree = "<group>"; };
-		EF13EC762AB2FAA400AD05A3 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
-		EF13EC782AB300D500AD05A3 /* GPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPView.swift; sourceTree = "<group>"; };
-		EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
-		EF13EC7C2AB3209F00AD05A3 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGPView.swift; sourceTree = "<group>"; };
-		EF13ECBC2AB3572900AD05A3 /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
 		EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alpine - Bold.ttf"; sourceTree = "<group>"; };
-		EF2EEFFA2AD3EBD900C60EBA /* Monoplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoplace.swift; sourceTree = "<group>"; };
-		EF390D772AC7299000ACA70E /* SiteWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteWeb.swift; sourceTree = "<group>"; };
+		EF2EEFFA2AD3EBD900C60EBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConcatURLView.swift; sourceTree = "<group>"; };
-		EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Résultat.swift"; sourceTree = "<group>"; };
+		EF3AB24D2AB5DDE800BDDA9A /* ResultCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCourse.swift; sourceTree = "<group>"; };
 		EF3E780C2AB48FF300C5C186 /* Ferrari-Outline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ferrari-Outline.ttf"; sourceTree = "<group>"; };
 		EF43C7B52AF2D8EA00AECC25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF4BA3F32AB1A9A6005E7D95 /* F1 2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 2025.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,14 +122,13 @@
 		EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular_web_0.ttf"; sourceTree = "<group>"; };
 		EF4BA40A2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide_web_0.ttf"; sourceTree = "<group>"; };
 		EF4BA40E2AB1AD44005E7D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EF4BA40F2AB1B0CB005E7D95 /* Pilote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilote.swift; sourceTree = "<group>"; };
-		EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecurie.swift; sourceTree = "<group>"; };
-		EF4BA4142AB1B0FD005E7D95 /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
-		EF4BA4162AB1B10F005E7D95 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		EF4BA40F2AB1B0CB005E7D95 /* Pilot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilot.swift; sourceTree = "<group>"; };
+		EF4BA4122AB1B0EC005E7D95 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		EF4BA4142AB1B0FD005E7D95 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		EF6102C72ACAB9BA004DCD90 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EF7126712AED2DB600880E9A /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		EF7126732AED2F5800880E9A /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
-		EF7126752AED37B100880E9A /* SignInUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUpView.swift; sourceTree = "<group>"; };
+		EF7126752AED37B100880E9A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		EF7126802AED5ABF00880E9A /* UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApp.swift; sourceTree = "<group>"; };
 		EF7126832AED6CDE00880E9A /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		EFAC8B032AC2C3F900FAA26E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -117,12 +138,10 @@
 		EFADECF32AB25D85002D386D /* McLaren-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "McLaren-SemiBold.ttf"; sourceTree = "<group>"; };
 		EFADECF52AB260AA002D386D /* Aston Martin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aston Martin-Regular.ttf"; sourceTree = "<group>"; };
 		EFADECF72AB26860002D386D /* F1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1ViewModel.swift; sourceTree = "<group>"; };
-		EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCltPilotView.swift; sourceTree = "<group>"; };
-		EFC1A13E2AD435F200D3E8DD /* AllMonoplacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMonoplacesView.swift; sourceTree = "<group>"; };
-		EFC1A1402AD43B4000D3E8DD /* MonoplaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoplaceView.swift; sourceTree = "<group>"; };
+		EFC1A13E2AD435F200D3E8DD /* AllCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCarsView.swift; sourceTree = "<group>"; };
 		EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotsStandingsView.swift; sourceTree = "<group>"; };
 		EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStandingsView.swift; sourceTree = "<group>"; };
-		EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPartenairesView.swift; sourceTree = "<group>"; };
+		EFD61F792AC6F6DD0011EBC0 /* AllPartnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPartnersView.swift; sourceTree = "<group>"; };
 		EFDB177C2ACAA454003722A3 /* F1_RSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_RSView.swift; sourceTree = "<group>"; };
 		EFDBD2672AB448A20085E237 /* Haas-superitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Haas-superitalic.ttf"; sourceTree = "<group>"; };
 		EFDBD2682AB448A20085E237 /* Mercedes-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mercedes-Bold.ttf"; sourceTree = "<group>"; };
@@ -132,13 +151,10 @@
 		EFDBD2712AB465E40085E237 /* Audi-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-BoldItalic.ttf"; sourceTree = "<group>"; };
 		EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandPrix.swift; sourceTree = "<group>"; };
 		EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberRiderView.swift; sourceTree = "<group>"; };
-		EFDCF2942AC18A4500D3C209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EFDCF2962AC18A8B00D3C209 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		EFDCF2942AC18A4500D3C209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AppLocalizable.strings; sourceTree = "<group>"; };
+		EFDCF2962AC18A8B00D3C209 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/AppLocalizable.strings; sourceTree = "<group>"; };
 		EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaractCircuitView.swift; sourceTree = "<group>"; };
-		EFEE64832AB84DB200291C54 /* Classements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classements.swift; sourceTree = "<group>"; };
-		EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partenaire.swift; sourceTree = "<group>"; };
-		EFF76C362AC4708300FAD9B0 /* PartenaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartenaireView.swift; sourceTree = "<group>"; };
+		EFF76C332AC46B8900FAD9B0 /* Partner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,46 +172,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E76E3E262AFC1F9D00B5379A /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				E7977A8B2AF44A4200536A13 /* Authentification */,
+				EF7126832AED6CDE00880E9A /* UserProfileView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		E7977A8B2AF44A4200536A13 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				EF7126752AED37B100880E9A /* SignInView.swift */,
+				E7977A8C2AF44A9800536A13 /* SignUpView.swift */,
+				E7977A902AF45E3B00536A13 /* SliderSignView.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		E7A254182AF51C3800A0C678 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E7A254192AF51E1F00A0C678 /* F1Bold.swift */,
+				E7A2541B2AF51E3B00A0C678 /* F1Regular.swift */,
+				E7A2541D2AF51E4C00A0C678 /* F1Wide.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		EF13EC7E2AB322FA00AD05A3 /* Grand Prix */ = {
 			isa = PBXGroup;
 			children = (
 				EFE4FDA42AB9B38000EBC43F /* CaractCircuitView.swift */,
-				EF13EC782AB300D500AD05A3 /* GPView.swift */,
 				EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */,
+				E79A20CA2AF6FDF90012BE0F /* ItemGPView.swift */,
+				E79A20CC2AF702BA0012BE0F /* GPView.swift */,
 			);
 			path = "Grand Prix";
 			sourceTree = "<group>";
 		};
-		EF13EC7F2AB3230200AD05A3 /* Écuries */ = {
+		EF13EC7F2AB3230200AD05A3 /* Teams */ = {
 			isa = PBXGroup;
 			children = (
 				EFADECEC2AB25C6B002D386D /* AllTeamsView.swift */,
-				EF13EC7C2AB3209F00AD05A3 /* TeamView.swift */,
+				E77269912AF6881000C9F0B8 /* ItemTeamView.swift */,
+				E77269932AF6948C00C9F0B8 /* TeamView.swift */,
 			);
-			path = "Écuries";
+			path = Teams;
 			sourceTree = "<group>";
 		};
-		EF13EC802AB3230D00AD05A3 /* Classement */ = {
+		EF13EC802AB3230D00AD05A3 /* Standings */ = {
 			isa = PBXGroup;
 			children = (
 				EFADECEE2AB25C88002D386D /* StandingsView.swift */,
 				EFC378572AB5A5A4009C983E /* PilotsStandingsView.swift */,
 				EFC378592AB5A5BA009C983E /* TeamsStandingsView.swift */,
-				EF0DBFB02AB8C10200D65013 /* PilotSprintStandingView.swift */,
-				EF0DBFB22AB8C11400D65013 /* TeamSprintStandingView.swift */,
 			);
-			path = Classement;
+			path = Standings;
 			sourceTree = "<group>";
 		};
-		EF13ECBB2AB3571600AD05A3 /* Pilotes */ = {
+		EF13ECBB2AB3571600AD05A3 /* Pilots */ = {
 			isa = PBXGroup;
 			children = (
 				EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */,
-				EF13ECBC2AB3572900AD05A3 /* PilotView.swift */,
 				EFDCF28F2AC1852300D3C209 /* NumberRiderView.swift */,
-				EFAEE4362AC34423000BDC00 /* GraphCltPilotView.swift */,
+				E79A20C82AF6DFCF0012BE0F /* PilotView.swift */,
+				E79E41A42AFA3A6400C6F9DE /* GraphCltPilotView.swift */,
+				E74674752B001EC0005AC39D /* ResultsView.swift */,
 			);
-			path = Pilotes;
+			path = Pilots;
 			sourceTree = "<group>";
 		};
 		EF4BA3EA2AB1A9A6005E7D95 = {
@@ -229,7 +275,11 @@
 				EF6102C72ACAB9BA004DCD90 /* Extensions.swift */,
 				EF4BA3FA2AB1A9A8005E7D95 /* Assets.xcassets */,
 				EF4BA3FC2AB1A9A8005E7D95 /* Preview Content */,
-				EFDCF2952AC18A4500D3C209 /* Localizable.strings */,
+				EFDCF2952AC18A4500D3C209 /* AppLocalizable.strings */,
+				E74674732B000AFA005AC39D /* Car.strings */,
+				E746746E2B000A75005AC39D /* Countries.strings */,
+				E74674682B0001C6005AC39D /* Partners.strings */,
+				E74674622B0000CD005AC39D /* GrandPrix.strings */,
 			);
 			path = "F12025-iOS";
 			sourceTree = "<group>";
@@ -245,6 +295,7 @@
 		EF4BA4042AB1ACD4005E7D95 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				E7A254182AF51C3800A0C678 /* ViewModifiers */,
 				EFADECF22AB25CBD002D386D /* Numbers */,
 				EF4BA4082AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf */,
 				EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */,
@@ -256,21 +307,19 @@
 		EF4BA4052AB1ACE2005E7D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EFC1A13D2AD435D400D3E8DD /* Monoplaces */,
-				EFDB177B2ACAA421003722A3 /* Réseaux sociaux */,
-				EFF76C352AC4705600FAD9B0 /* Partenaires */,
-				EF13EC7A2AB300F200AD05A3 /* ItemsView.swift */,
+				EFC1A13D2AD435D400D3E8DD /* Cars */,
+				EF13EC7E2AB322FA00AD05A3 /* Grand Prix */,
+				EFF76C352AC4705600FAD9B0 /* Partners */,
+				EF13ECBB2AB3571600AD05A3 /* Pilots */,
+				EFDB177B2ACAA421003722A3 /* Social networks */,
+				EF13EC802AB3230D00AD05A3 /* Standings */,
+				EF13EC7F2AB3230200AD05A3 /* Teams */,
+				E76E3E262AFC1F9D00B5379A /* Users */,
 				EFAC8B032AC2C3F900FAA26E /* MenuView.swift */,
 				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
 				EFADECEA2AB25C42002D386D /* HomeView.swift */,
-				EF13EC762AB2FAA400AD05A3 /* FlagView.swift */,
-				EF13ECBB2AB3571600AD05A3 /* Pilotes */,
-				EF13EC802AB3230D00AD05A3 /* Classement */,
-				EF13EC7F2AB3230200AD05A3 /* Écuries */,
-				EF13EC7E2AB322FA00AD05A3 /* Grand Prix */,
+				E77269952AF694FC00C9F0B8 /* FlagView.swift */,
 				EF390D7B2AC7326200ACA70E /* TextConcatURLView.swift */,
-				EF7126752AED37B100880E9A /* SignInUpView.swift */,
-				EF7126832AED6CDE00880E9A /* UserProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,8 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				EFADECF72AB26860002D386D /* F1ViewModel.swift */,
-				EFDCF2972AC18E2900D3C209 /* LanguageViewModel.swift */,
 				EF7126712AED2DB600880E9A /* LogInViewModel.swift */,
+				E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -288,16 +337,13 @@
 		EF4BA4072AB1ACFD005E7D95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EF4BA40F2AB1B0CB005E7D95 /* Pilote.swift */,
-				EF4BA4122AB1B0EC005E7D95 /* Ecurie.swift */,
-				EF4BA4142AB1B0FD005E7D95 /* Pays.swift */,
-				EF4BA4162AB1B10F005E7D95 /* Circuit.swift */,
-				EF3AB24D2AB5DDE800BDDA9A /* Résultat.swift */,
-				EFEE64832AB84DB200291C54 /* Classements.swift */,
+				EF4BA40F2AB1B0CB005E7D95 /* Pilot.swift */,
+				EF4BA4122AB1B0EC005E7D95 /* Team.swift */,
+				EF4BA4142AB1B0FD005E7D95 /* Country.swift */,
+				EF3AB24D2AB5DDE800BDDA9A /* ResultCourse.swift */,
 				EFDCF28D2AC1847800D3C209 /* GrandPrix.swift */,
-				EFF76C332AC46B8900FAD9B0 /* Partenaire.swift */,
-				EF390D772AC7299000ACA70E /* SiteWeb.swift */,
-				EF2EEFFA2AD3EBD900C60EBA /* Monoplace.swift */,
+				EFF76C332AC46B8900FAD9B0 /* Partner.swift */,
+				EF2EEFFA2AD3EBD900C60EBA /* Car.swift */,
 				EF7126802AED5ABF00880E9A /* UserApp.swift */,
 			);
 			path = Model;
@@ -327,31 +373,32 @@
 			path = Numbers;
 			sourceTree = "<group>";
 		};
-		EFC1A13D2AD435D400D3E8DD /* Monoplaces */ = {
+		EFC1A13D2AD435D400D3E8DD /* Cars */ = {
 			isa = PBXGroup;
 			children = (
-				EFC1A13E2AD435F200D3E8DD /* AllMonoplacesView.swift */,
-				EFC1A1402AD43B4000D3E8DD /* MonoplaceView.swift */,
+				EFC1A13E2AD435F200D3E8DD /* AllCarsView.swift */,
+				E79E41A82AFA5B8200C6F9DE /* CarView.swift */,
+				E79E41AA2AFA5E8500C6F9DE /* ItemCarView.swift */,
 			);
-			path = Monoplaces;
+			path = Cars;
 			sourceTree = "<group>";
 		};
-		EFDB177B2ACAA421003722A3 /* Réseaux sociaux */ = {
+		EFDB177B2ACAA421003722A3 /* Social networks */ = {
 			isa = PBXGroup;
 			children = (
 				EFDB177C2ACAA454003722A3 /* F1_RSView.swift */,
 			);
-			name = "Réseaux sociaux";
+			name = "Social networks";
 			path = "Réseaux sociaux";
 			sourceTree = "<group>";
 		};
-		EFF76C352AC4705600FAD9B0 /* Partenaires */ = {
+		EFF76C352AC4705600FAD9B0 /* Partners */ = {
 			isa = PBXGroup;
 			children = (
-				EFF76C362AC4708300FAD9B0 /* PartenaireView.swift */,
-				EFD61F792AC6F6DD0011EBC0 /* AllPartenairesView.swift */,
+				EFD61F792AC6F6DD0011EBC0 /* AllPartnersView.swift */,
+				E79E41A62AFA40CC00C6F9DE /* PartnerView.swift */,
 			);
-			path = Partenaires;
+			path = Partners;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,7 +435,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					EF4BA3F22AB1A9A6005E7D95 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -397,11 +444,10 @@
 			};
 			buildConfigurationList = EF4BA3EE2AB1A9A6005E7D95 /* Build configuration list for PBXProject "F12025-iOS" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = fr;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				fr,
 			);
 			mainGroup = EF4BA3EA2AB1A9A6005E7D95;
@@ -437,10 +483,14 @@
 				EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */,
 				EFDBD26E2AB44AF20085E237 /* HugoBoss-Regular.ttf in Resources */,
 				EF4BA3FE2AB1A9A8005E7D95 /* Preview Assets.xcassets in Resources */,
+				E74674712B000AFA005AC39D /* Car.strings in Resources */,
 				EF43C7B62AF2D8EA00AECC25 /* GoogleService-Info.plist in Resources */,
 				EF4BA3FB2AB1A9A8005E7D95 /* Assets.xcassets in Resources */,
-				EFDCF2932AC18A4500D3C209 /* Localizable.strings in Resources */,
+				EFDCF2932AC18A4500D3C209 /* AppLocalizable.strings in Resources */,
+				E74674662B0001C6005AC39D /* Partners.strings in Resources */,
 				EFDBD26A2AB448A20085E237 /* Haas-superitalic.ttf in Resources */,
+				E746746C2B000A75005AC39D /* Countries.strings in Resources */,
+				E74674602B0000CD005AC39D /* GrandPrix.strings in Resources */,
 				EFDBD26C2AB448A20085E237 /* Williams-Hollow.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,63 +502,100 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFDCF2982AC18E2900D3C209 /* LanguageViewModel.swift in Sources */,
-				EF4BA4132AB1B0EC005E7D95 /* Ecurie.swift in Sources */,
-				EF0DBFB32AB8C11400D65013 /* TeamSprintStandingView.swift in Sources */,
-				EF2EEFFB2AD3EBD900C60EBA /* Monoplace.swift in Sources */,
+				E77269962AF694FC00C9F0B8 /* FlagView.swift in Sources */,
+				EF4BA4132AB1B0EC005E7D95 /* Team.swift in Sources */,
+				EF2EEFFB2AD3EBD900C60EBA /* Car.swift in Sources */,
+				E77269942AF6948C00C9F0B8 /* TeamView.swift in Sources */,
 				EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */,
 				EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */,
 				EFC3785A2AB5A5BA009C983E /* TeamsStandingsView.swift in Sources */,
 				EF7126842AED6CDE00880E9A /* UserProfileView.swift in Sources */,
-				EF13EC7D2AB3209F00AD05A3 /* TeamView.swift in Sources */,
 				EF390D7C2AC7326200ACA70E /* TextConcatURLView.swift in Sources */,
 				EF4BA3F92AB1A9A6005E7D95 /* ContentView.swift in Sources */,
-				EF390D782AC7299000ACA70E /* SiteWeb.swift in Sources */,
+				E7977A912AF45E3B00536A13 /* SliderSignView.swift in Sources */,
+				E79E41A52AFA3A6400C6F9DE /* GraphCltPilotView.swift in Sources */,
 				EFDCF2902AC1852300D3C209 /* NumberRiderView.swift in Sources */,
-				EFF76C372AC4708300FAD9B0 /* PartenaireView.swift in Sources */,
-				EFC1A1412AD43B4000D3E8DD /* MonoplaceView.swift in Sources */,
-				EF4BA4102AB1B0CB005E7D95 /* Pilote.swift in Sources */,
-				EFD61F7A2AC6F6DD0011EBC0 /* AllPartenairesView.swift in Sources */,
+				E79A20CD2AF702BA0012BE0F /* GPView.swift in Sources */,
+				E79A20CB2AF6FDF90012BE0F /* ItemGPView.swift in Sources */,
+				EF4BA4102AB1B0CB005E7D95 /* Pilot.swift in Sources */,
+				E7977A8D2AF44A9800536A13 /* SignUpView.swift in Sources */,
+				E79E41A72AFA40CC00C6F9DE /* PartnerView.swift in Sources */,
+				EFD61F7A2AC6F6DD0011EBC0 /* AllPartnersView.swift in Sources */,
 				EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */,
-				EF4BA4172AB1B10F005E7D95 /* Circuit.swift in Sources */,
+				E79A20C92AF6DFCF0012BE0F /* PilotView.swift in Sources */,
 				EFADECF82AB26860002D386D /* F1ViewModel.swift in Sources */,
 				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
-				EF13EC792AB300D500AD05A3 /* GPView.swift in Sources */,
+				E79E41AB2AFA5E8500C6F9DE /* ItemCarView.swift in Sources */,
+				E7A2541E2AF51E4C00A0C678 /* F1Wide.swift in Sources */,
 				EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */,
-				EF3AB24E2AB5DDE800BDDA9A /* Résultat.swift in Sources */,
-				EFEE64842AB84DB200291C54 /* Classements.swift in Sources */,
-				EFAEE4372AC34423000BDC00 /* GraphCltPilotView.swift in Sources */,
+				EF3AB24E2AB5DDE800BDDA9A /* ResultCourse.swift in Sources */,
+				E77269922AF6881000C9F0B8 /* ItemTeamView.swift in Sources */,
 				EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */,
 				EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */,
+				E7A2541C2AF51E3B00A0C678 /* F1Regular.swift in Sources */,
 				EFC378582AB5A5A4009C983E /* PilotsStandingsView.swift in Sources */,
 				EF7126742AED2F5800880E9A /* AppUtilities.swift in Sources */,
-				EF4BA4152AB1B0FD005E7D95 /* Pays.swift in Sources */,
-				EFF76C342AC46B8900FAD9B0 /* Partenaire.swift in Sources */,
-				EF7126762AED37B100880E9A /* SignInUpView.swift in Sources */,
-				EFC1A13F2AD435F200D3E8DD /* AllMonoplacesView.swift in Sources */,
+				EF4BA4152AB1B0FD005E7D95 /* Country.swift in Sources */,
+				EFF76C342AC46B8900FAD9B0 /* Partner.swift in Sources */,
+				EF7126762AED37B100880E9A /* SignInView.swift in Sources */,
+				EFC1A13F2AD435F200D3E8DD /* AllCarsView.swift in Sources */,
+				E74674762B001EC0005AC39D /* ResultsView.swift in Sources */,
 				EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */,
-				EF0DBFB12AB8C10200D65013 /* PilotSprintStandingView.swift in Sources */,
 				EF7126812AED5ABF00880E9A /* UserApp.swift in Sources */,
-				EF13ECBD2AB3572900AD05A3 /* PilotView.swift in Sources */,
-				EF13EC7B2AB300F200AD05A3 /* ItemsView.swift in Sources */,
+				E79E41A92AFA5B8200C6F9DE /* CarView.swift in Sources */,
 				EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */,
 				EF7126722AED2DB600880E9A /* LogInViewModel.swift in Sources */,
+				E769C71D2AF5C31600FB0CE5 /* APIViewModel.swift in Sources */,
 				EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */,
-				EF13EC772AB2FAA400AD05A3 /* FlagView.swift in Sources */,
 				EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */,
+				E7A2541A2AF51E2000A0C678 /* F1Bold.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EFDCF2952AC18A4500D3C209 /* Localizable.strings */ = {
+		E74674622B0000CD005AC39D /* GrandPrix.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74674612B0000CD005AC39D /* en */,
+			);
+			name = GrandPrix.strings;
+			sourceTree = "<group>";
+		};
+		E74674682B0001C6005AC39D /* Partners.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74674672B0001C6005AC39D /* en */,
+				E74674692B0001C7005AC39D /* fr */,
+			);
+			name = Partners.strings;
+			sourceTree = "<group>";
+		};
+		E746746E2B000A75005AC39D /* Countries.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E746746D2B000A75005AC39D /* en */,
+			);
+			name = Countries.strings;
+			sourceTree = "<group>";
+		};
+		E74674732B000AFA005AC39D /* Car.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74674722B000AFA005AC39D /* en */,
+				E74674742B000AFC005AC39D /* fr */,
+			);
+			name = Car.strings;
+			sourceTree = "<group>";
+		};
+		EFDCF2952AC18A4500D3C209 /* AppLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EFDCF2942AC18A4500D3C209 /* en */,
 				EFDCF2962AC18A8B00D3C209 /* fr */,
 			);
-			name = Localizable.strings;
+			name = AppLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -551,6 +638,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -612,6 +700,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
