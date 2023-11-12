@@ -1,43 +1,52 @@
 //
-//  PilotSprintStandingView.swift
+//  PilotsStandingsView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/18/23.
+//  Created by Florian DAVID on 9/16/23.
 //
 
 import SwiftUI
 
-struct PilotSprintStandingView: View {
+struct PilotsStandingsView: View {
     @EnvironmentObject var viewModel: F1ViewModel
+    @EnvironmentObject var apiModel: APIViewModel
+    @Binding var sprint: Bool
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                ForEach(cltPilotes().indices, id: \.self) { i in
-                    let pilot = cltPilotes()[i]
+                let pilots = apiModel.pilots.sorted(by: {
+                    if sprint {
+                        return $0.points_sprint > $1.points_sprint
+                    } else {
+                        return $0.points > $1.points
+                    }
+                })
+                ForEach(pilots.indices, id: \.self) { i in
+                    let pilot = pilots[i]
                     NavigationLink(destination: PilotView(pilot: pilot)) {
                         HStack {
                             Text("\(i+1)")
-                                .font(Font.custom("Formula1-Display-Bold", size: 24))
+                                .modifier(F1Bold(size: 24))
                                 .frame(width: 40)
                             
-                            Image("\(pilot.prenom) \(pilot.nom)")
+                            Image("\(pilot.name)")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 50)
                             
-                            Text("\(pilot.prenom) \(pilot.nom)")
-                                .font(Font.custom("Formula1-Display-Bold", size: 18))
+                            Text("\(pilot.name)")
+                                .modifier(F1Bold(size: 18))
                                 .frame(width: 220)
                                 .multilineTextAlignment(.leading)
                             
-                            Text("\(viewModel.getTotalSprintPoints(pilot: pilot)) pts".uppercased())
+                            Text("\(sprint ? pilot.points_sprint : pilot.points) pts".uppercased())
                                 .padding(10)
                                 .background(.black)
                                 .cornerRadius(10)
-                                .font(Font.custom("Formula1", size: 14))
+                                .modifier(F1Regular(size: 14))
                                 .foregroundColor(.white)
-                                .frame(width: 75)
+                                .frame(maxWidth: 75)
                                 .multilineTextAlignment(.center)
                         }
                     }
@@ -45,15 +54,12 @@ struct PilotSprintStandingView: View {
             }
         }
     }
-    
-    func cltPilotes() -> [Pilote] {
-        return viewModel.pilotes.sorted { viewModel.getTotalSprintPoints(pilot: $0) > viewModel.getTotalSprintPoints(pilot: $1) }
-    }
 }
 
-struct PilotSprintStandingView_Previews: PreviewProvider {
+struct PilotsStandingsView_Previews: PreviewProvider {
     static var previews: some View {
-        PilotSprintStandingView()
+        PilotsStandingsView(sprint: Binding.constant(false))
             .environmentObject(F1ViewModel())
+            .environmentObject(APIViewModel())
     }
 }

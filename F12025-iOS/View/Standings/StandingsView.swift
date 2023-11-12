@@ -2,7 +2,7 @@
 //  StandingsView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/13/23.
+//  Created by Florian DAVID on 9/13/23.
 //
 
 import SwiftUI
@@ -35,17 +35,11 @@ struct StandingsView: View {
             }
             
             ScrollView {
-                if clt == 0 && sprint {
-                    PilotSprintStandingView()
-                        .padding(.horizontal)
-                } else if clt == 0 {
-                    PilotsStandingsView()
-                        .padding(.horizontal)
-                } else if sprint {
-                    TeamSprintStandingView()
+                if clt == 0 {
+                    PilotsStandingsView(sprint: $sprint)
                         .padding(.horizontal)
                 } else {
-                    TeamsStandingsView()
+                    TeamsStandingsView(sprint: $sprint)
                         .padding(.horizontal)
                 }
             }
