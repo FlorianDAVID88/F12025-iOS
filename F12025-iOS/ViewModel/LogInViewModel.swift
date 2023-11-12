@@ -2,7 +2,7 @@
 //  LogInViewModel.swift
 //  F1 2025
 //
-//  Created by user234243 on 10/28/23.
+//  Created by Florian DAVID on 10/28/23.
 //
 
 import SwiftUI
@@ -115,6 +115,25 @@ class SignUpViewModel: ObservableObject {
             
             guard let user = result?.user else { return }
             self.setCurrentUser(user: UserApp(from: user, connexion: "Google"))
+        }
+    }
+    
+    func change(name: String, email: String, phoneNumber: String) {
+        if let user = Auth.auth().currentUser {
+            let changeRequest = user.createProfileChangeRequest()
+            
+            // Ajoutez les informations que vous souhaitez associer à l'utilisateur
+            changeRequest.displayName = "John Doe"
+            changeRequest.photoURL = URL(string: "https://example.com/jane-q-user/profile.jpg")
+            
+            // Appliquez les modifications
+            changeRequest.commitChanges { error in
+                if let error = error {
+                    print("Erreur lors de la mise à jour du profil : \(error)")
+                } else {
+                    print("Profil utilisateur mis à jour avec succès")
+                }
+            }
         }
     }
 }
