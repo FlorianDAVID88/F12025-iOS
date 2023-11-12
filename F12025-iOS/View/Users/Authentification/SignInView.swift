@@ -1,21 +1,21 @@
 //
-//  SignInUpView.swift
+//  SignInView.swift
 //  F1 2025
 //
-//  Created by user234243 on 10/28/23.
+//  Created by Florian DAVID on 10/28/23.
 //
 
 import SwiftUI
 import _AuthenticationServices_SwiftUI
 
-struct SignInUpView: View {
+struct SignInView: View {
     @EnvironmentObject var signVM: SignUpViewModel
     @Environment(\.presentationMode) var presentationMode
-    @Environment(\.colorScheme) var colorScheme
-
+    
     @State private var email: String = ""
     @State private var passwd: String = ""
     @State private var alertNonConnect = false
+    @Binding var isShowingSignIn: Bool
     
     var body: some View {
         VStack(spacing: 20) {
@@ -24,7 +24,7 @@ struct SignInUpView: View {
                 .scaledToFit()
                 .frame(width: 200)
                 .foregroundColor(.accentColor)
-
+            
             VStack(spacing: 5) {
                 TextField("Email or username", text: $email)
                     .padding(10)
@@ -36,7 +36,7 @@ struct SignInUpView: View {
                     .background(.gray.opacity(0.25))
                     .cornerRadius(10)
             }
-            .font(.custom("Formula1", size: 20))
+            .modifier(F1Regular(size: 20))
             .foregroundColor(.accentColor)
             .padding(.horizontal)
             
@@ -49,12 +49,25 @@ struct SignInUpView: View {
                     .padding()
                     .background(Color.accentColor)
                     .cornerRadius(10)
-                    .font(.custom("Formula1-Display-Bold", size: 20))
+                    .modifier(F1Bold(size: 20))
                     .foregroundColor(.white)
             }
             .alert(isPresented: $alertNonConnect) {
                 Alert(title: Text("Impossible de se connecter !\nEmail ou mot de passe incorrect."))
             }
+            
+            HStack(spacing: 5) {
+                Text("If you haven't an account, subscribe")
+                Button {
+                    withAnimation {
+                        isShowingSignIn.toggle()
+                    }
+                } label: {
+                    Text("here")
+                        .underline()
+                }
+            }
+            .modifier(F1Regular(size: 14))
             
             Divider()
                 .padding(.vertical)
@@ -73,16 +86,17 @@ struct SignInUpView: View {
                 .padding()
                 .background(.blue)
                 .cornerRadius(10)
-                .font(.custom("Formula1-Display-Bold", size: 20))
+                .modifier(F1Bold(size: 20))
                 .foregroundColor(.white)
             }
         }
+        .navigationBarTitle("Log in", displayMode: .inline)
     }
 }
 
-struct SignInUpView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInUpView()
+        SignInView(isShowingSignIn: Binding.constant(false))
             .environmentObject(SignUpViewModel())
     }
 }
