@@ -1,30 +1,31 @@
 //
-//  PartenaireView.swift
-//  F12025-iOS
+//  PartnerView.swift
+//  F1 2025
 //
-//  Created by user234243 on 9/27/23.
+//  Created by Florian DAVID on 07/11/2023.
 //
 
 import SwiftUI
 
-struct PartenaireView: View {
-    @State var partenaire: Partenaire
+struct PartnerView: View {
+    @State var partner: Partner
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
                 VStack {
-                    Text(partenaire.nom_partenaire)
+                    Text(partner.name)
                         .font(.custom("Formula1-Display-Bold", size: 32))
-                    Text(LocalizedStringKey(partenaire.type.rawValue))
+                    Text(LocalizedStringKey(partner.type.rawValue))
                         .font(.custom("Formula1", size: 16))
                     
-                    Image(partenaire.nom_partenaire)
+                    Image(partner.name)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding()
                 }
                 
-                TextConcatURLView(nameText: partenaire.descriptif, url: partenaire.site.url, nameURL: partenaire.site.url_as)
+                TextConcatURLView(nameText: "\(partner.name)_desc".localized, url: partner.site.url, nameURL: partner.site.url_as)
                     .font(.custom("Formula1", size: 18))
                     .padding(.horizontal)
             }
@@ -33,8 +34,6 @@ struct PartenaireView: View {
     }
 }
 
-struct PartenaireView_Previews: PreviewProvider {
-    static var previews: some View {
-        PartenaireView(partenaire: Partenaire.allCases[2])
-    }
+#Preview {
+    PartnerView(partner: Partner(id_partner: "", name: "", type: Partner.TypePartner.Mondial, site: Partner.Website(name: "", url: "", url_as: "")))
 }

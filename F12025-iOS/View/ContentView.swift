@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/13/23.
+//  Created by Florian DAVID on 9/13/23.
 //
 
 import SwiftUI
@@ -10,9 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme     // Couleur du thème de l'appareil
     @EnvironmentObject var viewModel: F1ViewModel
-    @EnvironmentObject var langModel: LanguageViewModel
     @State private var showMenu: Bool = false
-    @State private var titleTab: String = LocalizedStringKey("Accueil").stringValue()
+    @State private var titleTab: String = "Accueil".localized
     
     init() {
         let attributesBold: [NSAttributedString.Key: Any] = [
@@ -37,18 +36,18 @@ struct ContentView: View {
                     HomeView()
                         .tabItem {
                             Image(systemName: "house")
-                            Text("Accueil")
+                            Text("Accueil".localized)
                         }
-                        .tag(LocalizedStringKey("Accueil").stringValue())
+                        .tag("Accueil".localized)
                     
                     AllTeamsView()
                         .tabItem {
                             Image("Teams")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                            Text("Ecuries")
+                            Text("Ecuries".localized)
                         }
-                        .tag(LocalizedStringKey("Ecuries").stringValue())
+                        .tag("Ecuries".localized)
                     
                     
                     AllGPView()
@@ -57,24 +56,26 @@ struct ContentView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                            Text("Grand Prix")
+                            Text("Grand Prix".localized)
                         }
-                        .tag(LocalizedStringKey("Grand Prix").stringValue())
+                        .tag("Grand Prix".localized)
                     
                     
                     StandingsView()
                         .tabItem {
                             Image(systemName: "list.number")
-                            Text("Classements")
+                            Text("Classements".localized)
                         }
-                        .tag(LocalizedStringKey("Classements").stringValue())
+                        .tag("Classements".localized)
                 }
             }
             .navigationBarTitle(showMenu ? "" : titleTab, displayMode: .inline)
             .navigationBarItems(leading: (
                 HStack {
                     Button {
-                        showMenu.toggle()
+                        withAnimation {
+                            showMenu.toggle()
+                        }
                     } label: {
                         if showMenu {
                             Image(systemName: "chevron.left")
@@ -110,7 +111,7 @@ struct ContentView: View {
                                 Spacer()
                                     .frame(width: geometry.safeAreaInsets.bottom)
                             }
-                            .transition(.slide)
+                            .transition(.slide.animation(.easeInOut))
                             .zIndex(1)
                         }
                     }
@@ -124,7 +125,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(F1ViewModel())
-            .environmentObject(LanguageViewModel())
             .environmentObject(SignUpViewModel())
+            .environmentObject(APIViewModel())
     }
 }

@@ -2,7 +2,7 @@
 //  F1_RSView.swift
 //  F1 2025
 //
-//  Created by user234243 on 10/2/23.
+//  Created by Florian DAVID on 10/2/23.
 //
 
 import SwiftUI

@@ -1,13 +1,15 @@
 //
-//  AllPartenairesView.swift
+//  AllPartnersView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/29/23.
+//  Created by Florian DAVID on 9/29/23.
 //
 
 import SwiftUI
 
-struct AllPartenairesView: View {
+struct AllPartnersView: View {
+    @EnvironmentObject var apiModel: APIViewModel
+    
     var body: some View {
         VStack(spacing: 30) {
             HStack(spacing: 10) {
@@ -22,12 +24,12 @@ struct AllPartenairesView: View {
             }
             
             VStack(alignment: .center) {
-                ForEach(TypePartenaire.allCases, id: \.self) { type in
+                ForEach(Partner.TypePartner.allCases, id: \.self) { type in
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))], alignment: .center, spacing: 25) {
-                        let partenaires = Partenaire.allCases.filter { $0.type == type }
-                        ForEach(partenaires, id: \.self.id_partenaire) { part in
-                            NavigationLink(destination: PartenaireView(partenaire: part)) {
-                                Image(part.nom_partenaire)
+                        let partenaires = apiModel.partners.filter { $0.type == type }
+                        ForEach(partenaires, id: \.self.id_partner) { part in
+                            NavigationLink(destination: PartnerView(partner: part)) {
+                                Image(part.name)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                             }
@@ -41,8 +43,9 @@ struct AllPartenairesView: View {
     }
 }
 
-struct AllPartenairesView_Previews: PreviewProvider {
+struct AllPartnersView_Previews: PreviewProvider {
     static var previews: some View {
-        AllPartenairesView()
+        AllPartnersView()
+            .environmentObject(APIViewModel())
     }
 }

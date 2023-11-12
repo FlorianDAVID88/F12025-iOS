@@ -1,46 +1,47 @@
 //
 //  GPView.swift
-//  F12025-iOS
+//  F1 2025
 //
-//  Created by user234243 on 9/14/23.
+//  Created by Florian DAVID on 05/11/2023.
 //
 
 import SwiftUI
 
 struct GPView: View {
-    @EnvironmentObject var viewModel: F1ViewModel
+    @EnvironmentObject var f1vm: F1ViewModel
+    @EnvironmentObject var apiModel: APIViewModel
     @State var gp: GrandPrix
     
     var body: some View {
         ScrollView {
             VStack(spacing: 25) {
                 VStack(spacing: 10) {
-                    Text(LocalizedStringKey(gp.nom))
+                    Text(LocalizedStringKey(gp.name))
                         .font(.custom("Formula1-Display-Bold", size: 26))
                         .multilineTextAlignment(.center)
                     
                     Button {
-                        viewModel.locationGoogleMaps(location: gp.circuit.nom)
+                        f1vm.locationGoogleMaps(location: gp.circuit.name)
                     } label: {
-                        Text(gp.circuit.nom)
+                        Text(gp.circuit.name)
                             .font(.custom("Formula1", size: 18))
                             .foregroundColor(.primary)
                     }
                     
                     HStack(spacing: 10) {
-                        Text(gp.circuit.ville)
+                        Text(gp.circuit.city)
                             .font(.custom("Formula1", size: 14))
                         
-                        FlagView(pays: gp.circuit.pays, height: 20)
+                        FlagView(pays: gp.circuit.country, height: 20)
                     }
                 }
                 
-                Image(gp.circuit.nom)
+                Image(gp.circuit.name)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding()
                 
-                VStack(spacing: 10) {
+                /*VStack(spacing: 10) {
                     let winner = viewModel.getWinner(gp: gp)
                     Text("Vainqueur 2025 :")
                         .font(.custom("Formula1", size: 18))
@@ -53,24 +54,23 @@ struct GPView: View {
                         }
                         .foregroundColor(.primary)
                     }
-                }
+                }*/
                 
-                //km_tour: 5.281, nb_tours: 58, virages: 16, zonesDRS: 2
                 VStack {
-                    CaractCircuitView(caract: "Longueur du circuit", content: String(format: "%.3f", gp.km_tour), unity: "km")
-                    CaractCircuitView(caract: "Nombre de tours", content: "\(gp.nb_tours)", unity: "")
-                    CaractCircuitView(caract: "Distance à parcourir", content: String(format: "%.3f",  gp.km_tour * Double(gp.nb_tours)), unity: "km")
-                    CaractCircuitView(caract: "Nombre de virages", content: "\(gp.virages)", unity: "")
-                    CaractCircuitView(caract: "Zones de DRS", content: "\(gp.zonesDRS)", unity: "")
+                    CaractCircuitView(caract: "Longueur du circuit", content: String(format: "%.3f", gp.kmLap), unity: "km")
+                    CaractCircuitView(caract: "Nombre de tours", content: "\(gp.nbLaps)", unity: "")
+                    CaractCircuitView(caract: "Distance à parcourir", content: String(format: "%.3f",  gp.kmLap * Double(gp.nbLaps)), unity: "km")
+                    CaractCircuitView(caract: "Nombre de virages", content: "\(gp.nbTurns)", unity: "")
+                    CaractCircuitView(caract: "Zones de DRS", content: "\(gp.nbDRS)", unity: "")
                 }
             }
         }
     }
 }
 
-struct GPView_Previews: PreviewProvider {
-    static var previews: some View {
-        GPView(gp: GrandPrix.allCases[11])
-            .environmentObject(F1ViewModel())
-    }
+
+#Preview {
+    GPView(gp: GrandPrix(id_gp: "", name: "Grand Prix de France", circuit: GrandPrix.Circuit(name: "Circuit de Nevers-Magny-Cours", city: "Nevers", country: Country(id_country: "", name: "France")), dateStart: "12/09", dateFinish: "14/09", sprint: false, kmLap: 6.009, nbLaps: 60, nbTurns: 17, nbDRS: 2))
+        .environmentObject(F1ViewModel())
+        .environmentObject(APIViewModel())
 }

@@ -1,25 +1,25 @@
 //
 //  FlagView.swift
-//  F12025-iOS
+//  F1 2025
 //
-//  Created by user234243 on 9/14/23.
+//  Created by Florian DAVID on 04/11/2023.
 //
 
 import SwiftUI
 
 struct FlagView: View {
-    @State var pays: Pays
+    @State var pays: Country
     @State var height: Int
     
     var body: some View {
         if height < 35 {
-            Image(pays.rawValue)
+            Image(pays.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: CGFloat(height))
                 .clipShape(RoundedRectangle(cornerRadius: 5))
         } else {
-            Image(pays.rawValue)
+            Image(pays.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: CGFloat(height))
@@ -34,8 +34,6 @@ struct FlagView: View {
     }
 }
 
-struct FlagView_Previews: PreviewProvider {
-    static var previews: some View {
-        FlagView(pays: .AFS, height: 25)
-    }
+#Preview {
+    FlagView(pays: Country(id_country: "6541050682c016d52426f93b", name: "France"), height: 30)
 }

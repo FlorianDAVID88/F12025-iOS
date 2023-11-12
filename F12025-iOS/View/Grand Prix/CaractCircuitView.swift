@@ -2,7 +2,7 @@
 //  CaractCircuitView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/19/23.
+//  Created by Florian DAVID on 9/19/23.
 //
 
 import SwiftUI
@@ -21,7 +21,7 @@ struct CaractCircuitView: View {
             
             HStack(alignment: .lastTextBaseline, spacing: 5) {
                 Text(content)
-                    .font(.custom("Formula1-Display-Bold", size: 28))
+                    .font(.custom("Formula1-Display-Bold", size: 24))
                 
                 Text(unity)
                     .font(.custom("Formula1", size: 14))
@@ -39,6 +39,6 @@ struct CaractCircuitView: View {
 
 struct CaractCircuitView_Previews: PreviewProvider {
     static var previews: some View {
-        CaractCircuitView(caract: "Total distance", content: "000.000", unity: "km")
+        CaractCircuitView(caract: "Distance à parcourir", content: "000.000", unity: "km")
     }
 }

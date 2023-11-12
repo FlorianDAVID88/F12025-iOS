@@ -2,7 +2,7 @@
 //  MenuView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/26/23.
+//  Created by Florian DAVID on 9/26/23.
 //
 
 import SwiftUI
@@ -15,19 +15,19 @@ struct MenuView: View {
     var body: some View {
         VStack {
             List {
-                NavigationLink(destination: AllPartenairesView()) {
+                NavigationLink(destination: AllPartnersView()) {
                     Text("Nos partenaires")
                 }
                 NavigationLink(destination: F1_RSView()) {
                     Text("Réseaux sociaux F1")
                 }
-                NavigationLink(destination: AllMonoplacesView()) {
+                NavigationLink(destination: AllCarsView()) {
                     Text("Monoplaces 2025")
                 }
             }
             .listStyle(.plain)
-            .font(Font.custom("Formula1", size: 18))
-            
+            .modifier(F1Regular(size: 18))
+
             Spacer()
             VStack(spacing: 15) {
                 HStack(spacing: 30) {
@@ -73,8 +73,7 @@ struct MenuView: View {
                                 alertDisconnect.toggle()
                             } label: {
                                 Text("Se déconnecter")
-                                    .font(Font.custom("Formula1", size: 18))
-                                    .underline()
+                                                            .underline()
                             }
                             .alert(isPresented: $alertDisconnect) {
                                 Alert(
@@ -88,10 +87,9 @@ struct MenuView: View {
                             }
                         }
                     } else {
-                        NavigationLink(destination: SignInUpView()) { //LogInView()
+                        NavigationLink(destination: SliderSignView()) { //LogInView()
                             Text("Connexion")
-                                .font(Font.custom("Formula1", size: 18))
-                                .underline()
+                                                    .underline()
                         }
                     }
                 }
@@ -100,6 +98,7 @@ struct MenuView: View {
                 .frame(maxWidth: .infinity)
                 .frame(maxHeight: 40)
                 .background(.gray.opacity(0.5))
+                .modifier(F1Regular(size: 18))
             }
         }
     }

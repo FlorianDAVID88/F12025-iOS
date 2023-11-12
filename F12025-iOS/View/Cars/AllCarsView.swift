@@ -1,22 +1,24 @@
 //
-//  AllMonoplacesView.swift
+//  AllCarsView.swift
 //  F1 2025
 //
-//  Created by user234243 on 10/9/23.
+//  Created by Florian DAVID on 10/9/23.
 //
 
 import SwiftUI
 
-struct AllMonoplacesView: View {
+struct AllCarsView: View {
+    @EnvironmentObject var apiModel: APIViewModel
+    
     var body: some View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 15) {
-                    let monoplaces = Monoplace.allCases.sorted { $0.nom_monoplace < $1.nom_monoplace }
-                    ForEach(monoplaces, id: \.self.id_monoplace) { car in
-                        NavigationLink(destination: MonoplaceView(monoplace: car)) {
+                    let cars = apiModel.cars.sorted { $0.name < $1.name }
+                    ForEach(cars, id: \.self.id_car) { car in
+                        NavigationLink(destination: CarView(car: car)) {
                             HStack {
-                                ItemMonoplaceView(monoplace: car)
+                                ItemCarView(car: car)
                                 Spacer()
                                 Image(systemName: "chevron.right")
                             }
@@ -31,8 +33,9 @@ struct AllMonoplacesView: View {
     }
 }
 
-struct AllMonoplacesView_Previews: PreviewProvider {
+struct AllCarsView_Previews: PreviewProvider {
     static var previews: some View {
-        AllMonoplacesView()
+        AllCarsView()
+            .environmentObject(APIViewModel())
     }
 }

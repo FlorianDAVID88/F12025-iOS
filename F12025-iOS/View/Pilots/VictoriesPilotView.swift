@@ -2,13 +2,13 @@
 //  VictoriesPilotView.swift
 //  F12025-iOS
 //
-//  Created by user234243 on 9/18/23.
+//  Created by Florian DAVID on 9/18/23.
 //
 
 import SwiftUI
 
 struct ListVictoriesView: View {
-    @State var victories: [Résultat]
+    @State var victories: [ResultCourse]
     @State var is_GP: Bool
     
     var body: some View {
@@ -18,27 +18,27 @@ struct ListVictoriesView: View {
                 Text("Victoires \(is_GP ? "GP" : "Sprint") (\(victories.count)) : ")
                     .font(.custom("Formula1", size: 20))
                 
-                ForEach(victories, id: \.self.id_resultat) { vict in
+                ForEach(victories, id: \.self.id_result) { vict in
                     VStack {
-                        if vict.cltGP == 1 {
+                        if vict.position == 1 {
                             HStack(spacing: 10) {
                                 Image("Victory")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(height: 30)
                                 
-                                Text("\(vict.gp.nom)")
+                                Text("\(vict.gp.name)")
                                     .font(.custom("Formula1-Display-Wide", size: 16))
                             }
                         }
-                        if vict.cltSprint == 1 {
+                        if vict.position == 1 && vict.isSprint {
                             HStack(spacing: 10) {
                                 Image("Victory")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(height: 30)
                                 
-                                Text("Course sprint de \(vict.gp.nom)")
+                                Text("Course sprint de \(vict.gp.name)")
                                     .font(.custom("Formula1-Display-Wide", size: 16))
                             }
                         }
@@ -51,13 +51,14 @@ struct ListVictoriesView: View {
 }
 
 struct VictoriesPilotView: View {
-    @EnvironmentObject var viewModel: F1ViewModel
-    @State var pilot: Pilote
+    @EnvironmentObject var viewModel: APIViewModel
+    @State var pilot: Pilot
     
     var body: some View {
         VStack(alignment: .leading, spacing: 25) {
-            let victoriesGP = viewModel.getVictoriesGPFrom(pilot: pilot)
-            let victoriesSprint = viewModel.getVictoriesSprintFrom(pilot: pilot)
+            let victoriesPilot = getVictoriesPilot()
+            let victoriesGP = victoriesPilot.filter { !$0.isSprint }
+            let victoriesSprint = victoriesPilot.filter { $0.isSprint }
                        
             ListVictoriesView(victories: victoriesGP, is_GP: true)
             ListVictoriesView(victories: victoriesSprint, is_GP: false)
@@ -65,11 +66,20 @@ struct VictoriesPilotView: View {
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 5)
     }
+    
+    func getVictoriesPilot() -> [ResultCourse] {
+        var results: [ResultCourse] = []
+        Task.init {
+            let res = await viewModel.getResultsFromPilot(pilot: pilot).filter { $0.position == 1 }
+            results.append(contentsOf: res)
+        }
+        return results
+    }
 }
 
 struct VictoriesPilotView_Previews: PreviewProvider {
     static var previews: some View {
-        VictoriesPilotView(pilot: Pilote.allCases[3])
-            .environmentObject(F1ViewModel())
+        VictoriesPilotView(pilot: Pilot())
+            .environmentObject(APIViewModel())
     }
 }

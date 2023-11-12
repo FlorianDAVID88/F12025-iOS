@@ -1,19 +1,16 @@
 //
 //  GraphCltPilotView.swift
-//  F12025-iOS
+//  F1 2025
 //
-//  Created by user234243 on 9/26/23.
+//  Created by Florian DAVID on 07/11/2023.
 //
 
 import SwiftUI
 
 struct GraphCltPilotView: View {
-    private var rankings: [Int] // Remplacez ces données par les vôtres
-    
-    init(pilote: Pilote) {
-        var p = pilote
-        self.rankings = p.getResultsGP()
-    }
+    @EnvironmentObject var apiModel: APIViewModel
+    @State var pilot: Pilot
+    @State private var results: [ResultCourse] = []
     
     var body: some View {
         ZStack {
@@ -28,7 +25,13 @@ struct GraphCltPilotView: View {
                 path.addLine(to: CGPoint(x: 340, y: 220))
             }
             .stroke(Color.gray, lineWidth: 4)
+            .onAppear {
+                Task.init {
+                    results = await apiModel.getResultsFromPilot(pilot: pilot)
+                }
+            }
             
+            let rankings = getRankings(pilot: pilot)
             // Dessinez la ligne reliant les points
             Path { path in
                 for (i, ranking) in rankings.enumerated() {
@@ -94,10 +97,19 @@ struct GraphCltPilotView: View {
         }
         .frame(width: 340, height: 240)
     }
+    
+    func getRankings(pilot: Pilot) -> [Int] {
+        var rankings: [Int] = []
+        
+        for result in results {
+            rankings.append(result.position)
+        }
+        
+        return rankings
+    }
 }
 
-struct GraphCltPilotView_Previews: PreviewProvider {
-    static var previews: some View {
-        GraphCltPilotView(pilote: Pilote.allCases[3])
-    }
+#Preview {
+    GraphCltPilotView(pilot: Pilot())
+        .environmentObject(APIViewModel())
 }
