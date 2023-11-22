@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @EnvironmentObject var signVM: SignUpViewModel
+    @EnvironmentObject var signVM: AuthViewModel
     @State private var params = ["","","","",""]
     @Binding var isShowingSignIn: Bool
     @State private var allOK = false
@@ -53,7 +53,7 @@ struct SignUpView: View {
             
             Button {
                 if params.allSatisfy({ $0 != "" }) {
-                    signVM.signUpWithEmail(email: params[2], password: params[3])
+                    signVM.signUpWithEmail(firstname: params[0], lastName: params[1], email: params[2], password: params[3])
                 }
             } label: {
                 Text("Submit")
@@ -122,4 +122,5 @@ struct SignUpView: View {
 
 #Preview {
     SignUpView(isShowingSignIn: Binding.constant(false))
+        .environmentObject(AuthViewModel())
 }

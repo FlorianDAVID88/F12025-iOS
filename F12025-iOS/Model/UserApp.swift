@@ -21,13 +21,13 @@ struct UserApp: Codable {
     var photoURL: URL?
     var isAnonymous: Bool
     var isEmailVerified: Bool
-    var connexion: String       // The connexion method (Apple, Google or Email)
+    var connexion: String       // The connexion method (Apple, Google or GitHub)
     
     init(from user: User, connexion: String) {
         self.id = user.uid
         self.name = user.displayName ?? "User"
         self.email = user.email ?? ""
-        self.phoneNumber = user.phoneNumber ?? ""
+        self.phoneNumber = user.phoneNumber ?? "No"
         self.photoURL = user.photoURL
         self.isAnonymous = user.isAnonymous
         self.isEmailVerified = user.isEmailVerified

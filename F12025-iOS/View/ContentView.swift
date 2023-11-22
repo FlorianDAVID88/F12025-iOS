@@ -125,7 +125,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(F1ViewModel())
-            .environmentObject(SignUpViewModel())
+            .environmentObject(AuthViewModel())
             .environmentObject(APIViewModel())
     }
 }

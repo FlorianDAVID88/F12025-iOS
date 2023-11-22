@@ -9,7 +9,7 @@ import SwiftUI
 import _AuthenticationServices_SwiftUI
 
 struct SignInView: View {
-    @EnvironmentObject var signVM: SignUpViewModel
+    @EnvironmentObject var signVM: AuthViewModel
     @Environment(\.presentationMode) var presentationMode
     
     @State private var email: String = ""
@@ -97,6 +97,6 @@ struct SignInView: View {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView(isShowingSignIn: Binding.constant(false))
-            .environmentObject(SignUpViewModel())
+            .environmentObject(AuthViewModel())
     }
 }

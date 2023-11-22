@@ -9,7 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct MenuView: View {
-    @EnvironmentObject var signVM: SignUpViewModel
+    @EnvironmentObject var signVM: AuthViewModel
     @State private var alertDisconnect = false
     
     var body: some View {
@@ -107,6 +107,6 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
-            .environmentObject(SignUpViewModel())
+            .environmentObject(AuthViewModel())
     }
 }
