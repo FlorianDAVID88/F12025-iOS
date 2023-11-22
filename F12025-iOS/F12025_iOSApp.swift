@@ -30,11 +30,14 @@ struct F12025_iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(F1ViewModel())
-                .environmentObject(SignUpViewModel())
-                .environmentObject(APIViewModel())
-                .navigationViewStyle(.stack)
+            ZStack {
+                ContentView()
+                IntroductionView()
+            }
+            .environmentObject(F1ViewModel())
+            .environmentObject(AuthViewModel())
+            .environmentObject(APIViewModel())
+            .navigationViewStyle(.stack)
         }
     }
 }
