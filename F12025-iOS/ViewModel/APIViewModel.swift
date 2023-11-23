@@ -7,151 +7,154 @@
 
 import Foundation
 
+enum StateAPI {
+    case notAvailable
+    case loading
+    case success(data: Codable)
+    case failed(error: Error)
+}
+
+@MainActor
 class APIViewModel: ObservableObject {
-    @Published var teams: [Team] = []
-    @Published var pilots: [Pilot] = []
-    @Published var cars: [Car] = []
-    @Published var allGPs: [GrandPrix] = []
-    @Published var partners: [Partner] = []
-    @Published var countries: [Country] = []
-    
-    
+    @Published var state: StateAPI = .notAvailable
+    private let service: APIService
+
     init() {
-        initData()
+        self.service = APIService()
     }
     
-    private func initData() {
-        Task.init {
-            do {
-                let teams = try await decodeAPIInfo(route: "teams", queryItems: [], to: [Team].self)
-                let pilots = try await decodeAPIInfo(route: "pilots", queryItems: [], to: [Pilot].self)
-                let cars = try await decodeAPIInfo(route: "cars", queryItems: [], to: [Car].self)
-                let allGPs = try await decodeAPIInfo(route: "GPs", queryItems: [], to: [GrandPrix].self)
-                let partners = try await decodeAPIInfo(route: "partners", queryItems: [], to: [Partner].self)
-                let countries = try await decodeAPIInfo(route: "countries", queryItems: [], to: [Country].self)
-                
-                DispatchQueue.main.async {
-                    self.teams.append(contentsOf: teams)
-                    self.pilots.append(contentsOf: pilots)
-                    self.cars.append(contentsOf: cars)
-                    self.allGPs.append(contentsOf: allGPs)
-                    self.partners.append(contentsOf: partners)
-                    self.countries.append(contentsOf: countries)
-                }
-                
-            } catch {
-                throw APIError.runtimeError("Error : \(error)")
-            }
-        }
-    }
-    
-    /**
-     * Returns the API key for this app
-     * Creating in Product > Scheme > Edit Scheme > Run > Environment variables (create him if it doesn't)
-     */
-    private func getAPIKey() throws -> String {
-        if let apiKey = ProcessInfo.processInfo.environment["API_KEY"] {
-            return apiKey
-        } else {
-            throw APIError.apiKeyError("The environment variable 'API_KEY' wasn't defined.")
-        }
-    }
-    
-    /**
-     * Returns the decoded data from the API
-     * @param route: the route of the API
-     * @param queryItems: the query items for the route
-     * @param to: the type of the data to decode
-     */
-    private func decodeAPIInfo<T: Decodable>(route: String, queryItems: [URLQueryItem], to: T.Type) async throws -> T {
-        let urlString = "https://f12025-api.vercel.app/\(route)"
-        var queries = queryItems
-        queries.append(URLQueryItem(name: "api_key", value: try getAPIKey()))
-        
-        if var urlComponents = URLComponents(string: urlString) {
-            urlComponents.queryItems = queries
-            
-            if let url = urlComponents.url {
-                let (data, _) = try await URLSession.shared.data(from: url)
-                
-                do {
-                    let dataDecoded = try JSONDecoder().decode(to, from: data)
-                    return dataDecoded
-                } catch {
-                    throw APIError.runtimeError("\(route) error : \(error)")
-                }
-            }
-        }
-        
-        throw APIError.runtimeError("No data found !")
-    }
-    
-    func getResultsFromPilot(pilot: Pilot) async -> [ResultCourse] {
+    func getAllCountries() async {
+        self.state = .loading
         do {
-            let res = try await decodeAPIInfo(route: "results/\(pilot.id_pilot)",
-                                              queryItems: [],
-                                              to: [ResultCourse].self)
-            return res
+            let countries = try await service.fetchCountries()
+            self.state = .success(data: countries)
         } catch {
-            print("Error results : \(error)")
-            return []
+            self.state = .failed(error: error)
+            print(error)
         }
     }
     
-    func getPilotsStandingsFor(sprint: Bool) -> [Pilot] {
-        Task.init {
-            do {
-                let clt = try await decodeAPIInfo(route: "results/standings/pilots",
-                                                  queryItems: [URLQueryItem(name: "sprint", value: sprint.description)],
-                                                  to: [Pilot].self)
-                return clt
-            } catch {
-                print("Error pilot standings : \(error)")
-                return []
-            }
+    func getAllPilots() async {
+        self.state = .loading
+        do {
+            let pilots = try await service.fetchPilots()
+            self.state = .success(data: pilots)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
         }
-        return []
     }
     
-    func getTeamStandingsFor(sprint: Bool) -> [Team] {
-        Task.init {
-            do {
-                return try await decodeAPIInfo(route: "results/standings/teams",
-                                               queryItems: [URLQueryItem(name: "sprint", value: sprint.description)],
-                                               to: [Team].self)
-            } catch {
-                print("Error team standings : \(error)")
-                return []
-            }
+    func getAllTeams() async {
+        self.state = .loading
+        do {
+            let teams = try await service.fetchTeams()
+            self.state = .success(data: teams)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
         }
-        return []
     }
     
-    func getCarByTeam(team: Team) -> Car? {
-        return self.cars.first(where: { $0.team.id_team == team.id_team })
-    }
-    
-    func getCountryById(id: String) -> Country? {
-        Task.init {
-            do {
-                let countries = try await decodeAPIInfo(route: "teams/\(id)",
-                                                        queryItems: [],
-                                                        to: [Country]?.self)
-                return countries?.first
-            } catch {
-                print("Error country : \(error)")
-                return nil
-            }
+    func getAllGPs() async {
+        self.state = .loading
+        do {
+            let gpS = try await service.fetchGPs()
+            self.state = .success(data: gpS)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
         }
-        return nil
     }
     
-    func getPilotsFromTeam(team: Team) -> [Pilot] {
-        return self.pilots.filter({ $0.team.id_team == team.id_team })
+    func getAllCars() async {
+        self.state = .loading
+        do {
+            let cars = try await service.fetchCars()
+            self.state = .success(data: cars)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
     }
     
-    enum APIError: Error {
-        case apiKeyError(String)
-        case runtimeError(String)
+    func getAllPartners() async {
+        self.state = .loading
+        do {
+            let partners = try await service.fetchPartners()
+            self.state = .success(data: partners)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
+    }
+    
+    func getPilotsFromTeam(team: Team) async {
+        self.state = .loading
+        do {
+            let pilots = try await service.fetchPilots()
+            let pilotsTeam = pilots.filter { $0.team.id_team == team.id_team }
+            self.state = .success(data: pilotsTeam)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
+    }
+    
+    func getCarByTeam(team: Team) async {
+        self.state = .loading
+        do {
+            let cars = try await service.fetchCars()
+            let carsTeam = cars.filter { $0.team.id_team == team.id_team }
+            self.state = .success(data: carsTeam.first)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
+    }
+    
+    func getResultsFromPilot(pilot: Pilot) async {
+        self.state = .loading
+        do {
+            let results = try await service.fetchResultsForPilot(pilot: pilot)
+            self.state = .success(data: results)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
+    }
+    
+    func getCountryById(id: String) async {
+        self.state = .loading
+        do {
+            let countries = try await service.fetchCountries()
+            let country = countries.filter { $0.id_country == id }
+            self.state = .success(data: country.first)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
+    }
+    
+    func getPilotsStandingsFor(sprint: Bool) async {
+        self.state = .loading
+        do {
+            let standings = try await service.fetchPilotStandingsFor(sprint: sprint)
+            self.state = .success(data: standings)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
+    }
+    
+    func getTeamStandingsFor(sprint: Bool) async {
+        self.state = .loading
+        do {
+            let standings = try await service.fetchTeamStandingsFor(sprint: sprint)
+            self.state = .success(data: standings)
+        } catch {
+            self.state = .failed(error: error)
+            print(error)
+        }
     }
 }
