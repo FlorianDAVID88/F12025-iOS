@@ -8,33 +8,50 @@
 import SwiftUI
 
 struct ResultsView: View {
-    @State var results: [ResultCourse]
+    @EnvironmentObject var apiModel: APIViewModel
+    @State var pilot: Pilot
     
     var body: some View {
-        List {
-            ForEach(results, id: \.self.id_result) { result in
-                HStack(alignment: .center) {
-                    Text(result.gp.name)
-                        .modifier(F1Regular(size: 16))
-                    
-                    Spacer()
-                    
-                    if result.bestLap {
-                        Image(systemName: "clock.fill")
-                            .foregroundColor(.white)
-                            .font(.system(size: 14))
-                            .padding(3)
-                            .background(Color.accentColor)
-                            .cornerRadius(5)
+        VStack {
+            Text("Results".localized)
+                .font(.custom("Formula1", size: 24))
+            
+            switch apiModel.state {
+                case .success(let data):
+                    if let results = data as? [ResultCourse] {
+                        List {
+                            ForEach(results, id: \.self.id_result) { result in
+                                HStack(alignment: .center) {
+                                    Text(result.gp.name)
+                                        .modifier(F1Regular(size: 16))
+                                    
+                                    Spacer()
+                                    
+                                    if result.bestLap {
+                                        Image(systemName: "clock.fill")
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 14))
+                                            .padding(3)
+                                            .background(Color.accentColor)
+                                            .cornerRadius(5)
+                                    }
+                                    
+                                    getPosition(position: result.position)
+                                        .modifier(F1Bold(size: 24))
+                                    
+                                }
+                            }
+                        }
+                        .listStyle(.plain)
+                    } else {
+                        Text("No results for \(pilot.name)")
                     }
-                    
-                    getPosition(position: result.position)
-                        .modifier(F1Bold(size: 24))
-
-                }
+                default: EmptyView()
             }
         }
-        .listStyle(.plain)
+        .task {
+            await apiModel.getResultsFromPilot(pilot: pilot)
+        }
     }
     
     func getPosition(position: Int) -> some View {
@@ -65,8 +82,6 @@ struct ResultsView: View {
 }
 
 #Preview {
-    ResultsView(results: [
-        ResultCourse(id_result: "", name_result: "", isSprint: false, pilot: Pilot(), gp: GrandPrix(id_gp: "", name: "Grand Prix de France", circuit: GrandPrix.Circuit(name: "Circuit de Nevers-Magny-Cours", city: "Nevers", country: Country(id_country: "", name: "France")), dateStart: "27/06", dateFinish: "29/06", sprint: false, kmLap: 6.098, nbLaps: 65, nbTurns: 17, nbDRS: 3), position: 3, points: 15, bestLap: true),
-        ResultCourse(id_result: "", name_result: "", isSprint: false, pilot: Pilot(), gp: GrandPrix(id_gp: "", name: "Grand Prix de France", circuit: GrandPrix.Circuit(name: "Circuit de Nevers-Magny-Cours", city: "Nevers", country: Country(id_country: "", name: "France")), dateStart: "27/06", dateFinish: "29/06", sprint: false, kmLap: 6.098, nbLaps: 65, nbTurns: 17, nbDRS: 3), position: 1, points: 25, bestLap: false)
-    ])
+    ResultsView(pilot: Pilot())
+        .environmentObject(APIViewModel())
 }

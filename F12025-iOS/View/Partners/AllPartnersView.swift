@@ -26,18 +26,29 @@ struct AllPartnersView: View {
             VStack(alignment: .center) {
                 ForEach(Partner.TypePartner.allCases, id: \.self) { type in
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))], alignment: .center, spacing: 25) {
-                        let partenaires = apiModel.partners.filter { $0.type == type }
-                        ForEach(partenaires, id: \.self.id_partner) { part in
-                            NavigationLink(destination: PartnerView(partner: part)) {
-                                Image(part.name)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                        switch apiModel.state {
+                        case .success(let data):
+                            if let allParts = data as? [Partner] {
+                                let partners = allParts.filter { $0.type == type }
+                                ForEach(partners, id: \.self.id_partner) { part in
+                                    NavigationLink(destination: PartnerView(partner: part)) {
+                                        Image(part.name)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                    }
+                                }
+                            } else {
+                                Text("No partner")
                             }
+                        default: EmptyView()
                         }
                     }
                     .padding(.horizontal)
                     Divider()
                 }
+            }
+            .task {
+                await apiModel.getAllPartners()
             }
         }
     }

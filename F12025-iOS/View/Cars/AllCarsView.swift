@@ -13,23 +13,30 @@ struct AllCarsView: View {
     var body: some View {
         VStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 15) {
-                    let cars = apiModel.cars.sorted { $0.name < $1.name }
-                    ForEach(cars, id: \.self.id_car) { car in
-                        NavigationLink(destination: CarView(car: car)) {
-                            HStack {
-                                ItemCarView(car: car)
-                                Spacer()
-                                Image(systemName: "chevron.right")
+                switch apiModel.state {
+                    case .success(let data):
+                        if let cars = data as? [Car] {
+                            VStack(alignment: .leading, spacing: 15) {
+                                ForEach(cars, id: \.self.id_car) { car in
+                                    NavigationLink(destination: CarView(car: car)) {
+                                        HStack {
+                                            ItemCarView(car: car)
+                                            Spacer()
+                                            Image(systemName: "chevron.right")
+                                        }
+                                        .padding(.horizontal)
+                                    }
+                                }
                             }
-                            .padding(.horizontal)
                         }
-                    }
+                    default: EmptyView()
                 }
             }
         }
-    
-        .navigationTitle("Monoplaces 2025")
+        .navigationTitle("Monoplaces 2025".localized)
+        .task {
+            await apiModel.getAllCars()
+        }
     }
 }
 

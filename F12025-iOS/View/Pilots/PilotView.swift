@@ -10,7 +10,6 @@ import SwiftUI
 struct PilotView: View {
     @EnvironmentObject var apiModel: APIViewModel
     @State var pilot: Pilot
-    @State private var results: [ResultCourse] = []
     
     var body: some View {
         ScrollView {
@@ -33,22 +32,11 @@ struct PilotView: View {
                 .padding(.horizontal)
                 
                 //VictoriesPilotView(pilot: pilot)
-                
-                    VStack {
-                        Text("Results".localized)
-                            .font(.custom("Formula1", size: 24))
-                        
-                        ResultsView(results: results)
-                    }
+                //ResultsView(pilot: pilot)
             }
         }
         .navigationBarTitle(Text("\(pilot.name)"), displayMode: .inline)
         .navigationBarItems(trailing: FlagView(pays: pilot.nationality, height: 25))
-        .onAppear {
-            Task.init {
-                results = await apiModel.getResultsFromPilot(pilot: pilot)
-            }
-        }
     }
 }
 

@@ -14,18 +14,29 @@ struct AllTeamsView: View {
     var body: some View {
         VStack {            
             ScrollView {
-                VStack(alignment: .leading, spacing: 15) {
-                    ForEach(apiModel.teams, id: \.self.id_team) { team in
-                        NavigationLink(destination: TeamView(team: team)) {
-                            HStack {
-                                ItemTeamView(team: team)
-                                Spacer()
-                                Image(systemName: "chevron.right")
+                switch apiModel.state {
+                    case .success(let data):
+                        if let teams = data as? [Team] {
+                            VStack(alignment: .leading, spacing: 15) {
+                                ForEach(teams, id: \.self.id_team) { team in
+                                    NavigationLink(destination: TeamView(team: team)) {
+                                        HStack {
+                                            ItemTeamView(team: team)
+                                            Spacer()
+                                            Image(systemName: "chevron.right")
+                                        }
+                                        .padding(.horizontal)
+                                    }
+                                }
                             }
-                            .padding(.horizontal)
+                        } else {
+                            Text("No team")
                         }
-                    }
+                    default: EmptyView()
                 }
+            }
+            .task {
+                await apiModel.getAllTeams()
             }
         }
     }

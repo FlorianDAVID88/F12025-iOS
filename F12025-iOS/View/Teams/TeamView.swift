@@ -31,42 +31,41 @@ struct TeamView: View {
                 }
             }
             
-            VStack(alignment: .leading) {
-                let image = Image("\(team.name) - Monoplace")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-                if let car = apiModel.getCarByTeam(team: team) {
-                    NavigationLink(destination: CarView(car: car)) {
-                        Image("\(team.name) - Monoplace")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    }
-                } else { image }
-                
+            VStack(alignment: .leading) {                
                 Text("description_pilots".localized)
                     .multilineTextAlignment(.leading)
                     .font(.custom("Formula1", size: 24))
                 
                 HStack {
-                    ForEach(apiModel.getPilotsFromTeam(team: team), id: \.self.id_pilot) { pilot in
-                        NavigationLink(destination: PilotView(pilot: pilot)) {
-                            VStack {
-                                Image("\(pilot.name)")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .cornerRadius(10)
-                                
-                                HStack {
-                                    NumberRiderView(pilot: pilot, fontSize: 20)
-                                    
-                                    FlagView(pays: pilot.nationality, height: 15)
-                                    Text("\(pilot.name)")
-                                        .modifier(F1Wide(size: 9))
+                    switch apiModel.state {
+                    case .success(let data):
+                        if let pilotsTeam = data as? [Pilot] {
+                            ForEach(pilotsTeam, id: \.self.id_pilot) { pilot in
+                                NavigationLink(destination: PilotView(pilot: pilot)) {
+                                    VStack {
+                                        Image("\(pilot.name)")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(10)
+                                        
+                                        HStack {
+                                            NumberRiderView(pilot: pilot, fontSize: 20)
+                                            
+                                            FlagView(pays: pilot.nationality, height: 15)
+                                            Text("\(pilot.name)")
+                                                .modifier(F1Wide(size: 9))
+                                        }
+                                    }
                                 }
                             }
+                        } else {
+                            Text("No pilots")
                         }
+                    default: EmptyView()
                     }
+                }
+                .task {
+                    await apiModel.getPilotsFromTeam(team: team)
                 }
             }
             .padding(.horizontal)

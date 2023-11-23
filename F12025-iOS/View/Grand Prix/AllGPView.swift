@@ -11,20 +11,32 @@ struct AllGPView: View {
     @EnvironmentObject var apiModel: APIViewModel
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 25) {
-                ForEach(apiModel.allGPs, id: \.self.id_gp) { gp in
-                    NavigationLink(destination: GPView(gp: gp)) {
-                        HStack {
-                            ItemGPView(gp: gp)
-                            Spacer()
-                            Image(systemName: "chevron.right")
+            switch apiModel.state {
+            case .success(let data):
+                if let allGPs = data as? [GrandPrix] {
+                    VStack(alignment: .leading, spacing: 25) {
+                        ForEach(allGPs, id: \.self.id_gp) { gp in
+                            NavigationLink(destination: GPView(gp: gp)) {
+                                HStack {
+                                    ItemGPView(gp: gp)
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                }
+                                .padding(.horizontal)
+                                .foregroundColor(.primary)
+                            }
                         }
-                        .padding(.horizontal)
-                        .foregroundColor(.primary)
                     }
+                    .padding(.vertical)
+                } else {
+                    Text("No Grand Prix")
                 }
+            default:
+                EmptyView()
             }
-            .padding(.vertical)
+        }
+        .task {
+            await apiModel.getAllGPs()
         }
     }
 }

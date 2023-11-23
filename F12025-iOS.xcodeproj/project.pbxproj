@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E733898A2B06212200CA4B38 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73389892B06212200CA4B38 /* IntroductionView.swift */; };
 		E74674602B0000CD005AC39D /* GrandPrix.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674622B0000CD005AC39D /* GrandPrix.strings */; };
 		E74674662B0001C6005AC39D /* Partners.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674682B0001C6005AC39D /* Partners.strings */; };
 		E746746C2B000A75005AC39D /* Countries.strings in Resources */ = {isa = PBXBuildFile; fileRef = E746746E2B000A75005AC39D /* Countries.strings */; };
 		E74674712B000AFA005AC39D /* Car.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674732B000AFA005AC39D /* Car.strings */; };
 		E74674762B001EC0005AC39D /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74674752B001EC0005AC39D /* ResultsView.swift */; };
+		E74959D12B0DF49D00DB7648 /* ChangePasswdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74959D02B0DF49D00DB7648 /* ChangePasswdView.swift */; };
 		E769C71D2AF5C31600FB0CE5 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */; };
 		E77269922AF6881000C9F0B8 /* ItemTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269912AF6881000C9F0B8 /* ItemTeamView.swift */; };
 		E77269942AF6948C00C9F0B8 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269932AF6948C00C9F0B8 /* TeamView.swift */; };
 		E77269962AF694FC00C9F0B8 /* FlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269952AF694FC00C9F0B8 /* FlagView.swift */; };
+		E77BA4BE2B03764000FF9A28 /* ItemProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77BA4BD2B03764000FF9A28 /* ItemProfileView.swift */; };
 		E7977A8D2AF44A9800536A13 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7977A8C2AF44A9800536A13 /* SignUpView.swift */; };
 		E7977A912AF45E3B00536A13 /* SliderSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7977A902AF45E3B00536A13 /* SliderSignView.swift */; };
+		E79A09722B03D47900447280 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A09712B03D47900447280 /* APIService.swift */; };
 		E79A20C92AF6DFCF0012BE0F /* PilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A20C82AF6DFCF0012BE0F /* PilotView.swift */; };
 		E79A20CB2AF6FDF90012BE0F /* ItemGPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A20CA2AF6FDF90012BE0F /* ItemGPView.swift */; };
 		E79A20CD2AF702BA0012BE0F /* GPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A20CC2AF702BA0012BE0F /* GPView.swift */; };
@@ -28,6 +32,7 @@
 		E7A2541A2AF51E2000A0C678 /* F1Bold.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A254192AF51E1F00A0C678 /* F1Bold.swift */; };
 		E7A2541C2AF51E3B00A0C678 /* F1Regular.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2541B2AF51E3B00A0C678 /* F1Regular.swift */; };
 		E7A2541E2AF51E4C00A0C678 /* F1Wide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2541D2AF51E4C00A0C678 /* F1Wide.swift */; };
+		E7C0D54A2B0B5A2B0055E6CA /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0D5492B0B5A2B0055E6CA /* FirebaseAuthService.swift */; };
 		EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */; };
 		EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */; };
 		EF183A6C2AB4BB3000D5FCCD /* Alpine - Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */; };
@@ -50,7 +55,7 @@
 		EF5E316D2ACAEB670087B0BB /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF5E316C2ACAEB670087B0BB /* GoogleSignInSwift */; };
 		EF6102C82ACAB9BA004DCD90 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6102C72ACAB9BA004DCD90 /* Extensions.swift */; };
 		EF7126702AED2C0600880E9A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF71266F2AED2C0600880E9A /* FirebaseAuth */; };
-		EF7126722AED2DB600880E9A /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126712AED2DB600880E9A /* LogInViewModel.swift */; };
+		EF7126722AED2DB600880E9A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126712AED2DB600880E9A /* AuthViewModel.swift */; };
 		EF7126742AED2F5800880E9A /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126732AED2F5800880E9A /* AppUtilities.swift */; };
 		EF7126762AED37B100880E9A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7126752AED37B100880E9A /* SignInView.swift */; };
 		EF71267F2AED59B500880E9A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EF71267E2AED59B500880E9A /* SDWebImageSwiftUI */; };
@@ -82,6 +87,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E73389892B06212200CA4B38 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		E74674612B0000CD005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GrandPrix.strings; sourceTree = "<group>"; };
 		E74674672B0001C6005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Partners.strings; sourceTree = "<group>"; };
 		E74674692B0001C7005AC39D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Partners.strings; sourceTree = "<group>"; };
@@ -89,12 +95,15 @@
 		E74674722B000AFA005AC39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Car.strings; sourceTree = "<group>"; };
 		E74674742B000AFC005AC39D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Car.strings; sourceTree = "<group>"; };
 		E74674752B001EC0005AC39D /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		E74959D02B0DF49D00DB7648 /* ChangePasswdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswdView.swift; sourceTree = "<group>"; };
 		E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
 		E77269912AF6881000C9F0B8 /* ItemTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTeamView.swift; sourceTree = "<group>"; };
 		E77269932AF6948C00C9F0B8 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		E77269952AF694FC00C9F0B8 /* FlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagView.swift; sourceTree = "<group>"; };
+		E77BA4BD2B03764000FF9A28 /* ItemProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemProfileView.swift; sourceTree = "<group>"; };
 		E7977A8C2AF44A9800536A13 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E7977A902AF45E3B00536A13 /* SliderSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSignView.swift; sourceTree = "<group>"; };
+		E79A09712B03D47900447280 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E79A20C82AF6DFCF0012BE0F /* PilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotView.swift; sourceTree = "<group>"; };
 		E79A20CA2AF6FDF90012BE0F /* ItemGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGPView.swift; sourceTree = "<group>"; };
 		E79A20CC2AF702BA0012BE0F /* GPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPView.swift; sourceTree = "<group>"; };
@@ -105,6 +114,7 @@
 		E7A254192AF51E1F00A0C678 /* F1Bold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Bold.swift; sourceTree = "<group>"; };
 		E7A2541B2AF51E3B00A0C678 /* F1Regular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Regular.swift; sourceTree = "<group>"; };
 		E7A2541D2AF51E4C00A0C678 /* F1Wide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Wide.swift; sourceTree = "<group>"; };
+		E7C0D5492B0B5A2B0055E6CA /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		EF0DBFAB2AB8ABB800D65013 /* VictoriesPilotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoriesPilotView.swift; sourceTree = "<group>"; };
 		EF13ECB92AB34F2600AD05A3 /* AllGPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGPView.swift; sourceTree = "<group>"; };
 		EF183A6B2AB4BB3000D5FCCD /* Alpine - Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alpine - Bold.ttf"; sourceTree = "<group>"; };
@@ -121,12 +131,12 @@
 		EF4BA4082AB1AD2B005E7D95 /* Formula1-Bold_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold_web_0.ttf"; sourceTree = "<group>"; };
 		EF4BA4092AB1AD2B005E7D95 /* Formula1-Regular_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular_web_0.ttf"; sourceTree = "<group>"; };
 		EF4BA40A2AB1AD2B005E7D95 /* Formula1-Wide_web_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide_web_0.ttf"; sourceTree = "<group>"; };
-		EF4BA40E2AB1AD44005E7D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF4BA40E2AB1AD44005E7D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF4BA40F2AB1B0CB005E7D95 /* Pilot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilot.swift; sourceTree = "<group>"; };
 		EF4BA4122AB1B0EC005E7D95 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		EF4BA4142AB1B0FD005E7D95 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		EF6102C72ACAB9BA004DCD90 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		EF7126712AED2DB600880E9A /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		EF7126712AED2DB600880E9A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		EF7126732AED2F5800880E9A /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
 		EF7126752AED37B100880E9A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		EF7126802AED5ABF00880E9A /* UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApp.swift; sourceTree = "<group>"; };
@@ -175,10 +185,20 @@
 		E76E3E262AFC1F9D00B5379A /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				E77BA4BC2B03761D00FF9A28 /* Profile */,
 				E7977A8B2AF44A4200536A13 /* Authentification */,
-				EF7126832AED6CDE00880E9A /* UserProfileView.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		E77BA4BC2B03761D00FF9A28 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EF7126832AED6CDE00880E9A /* UserProfileView.swift */,
+				E77BA4BD2B03764000FF9A28 /* ItemProfileView.swift */,
+				E74959D02B0DF49D00DB7648 /* ChangePasswdView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		E7977A8B2AF44A4200536A13 /* Authentification */ = {
@@ -189,6 +209,15 @@
 				E7977A902AF45E3B00536A13 /* SliderSignView.swift */,
 			);
 			path = Authentification;
+			sourceTree = "<group>";
+		};
+		E79A09702B03D46600447280 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E79A09712B03D47900447280 /* APIService.swift */,
+				E7C0D5492B0B5A2B0055E6CA /* FirebaseAuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E7A254182AF51C3800A0C678 /* ViewModifiers */ = {
@@ -270,6 +299,7 @@
 				EF4BA4042AB1ACD4005E7D95 /* Font */,
 				EF4BA4072AB1ACFD005E7D95 /* Model */,
 				EF4BA4062AB1ACF3005E7D95 /* ViewModel */,
+				E79A09702B03D46600447280 /* Services */,
 				EF4BA4052AB1ACE2005E7D95 /* View */,
 				EF4BA3F62AB1A9A6005E7D95 /* F12025_iOSApp.swift */,
 				EF6102C72ACAB9BA004DCD90 /* Extensions.swift */,
@@ -316,6 +346,7 @@
 				EF13EC7F2AB3230200AD05A3 /* Teams */,
 				E76E3E262AFC1F9D00B5379A /* Users */,
 				EFAC8B032AC2C3F900FAA26E /* MenuView.swift */,
+				E73389892B06212200CA4B38 /* IntroductionView.swift */,
 				EF4BA3F82AB1A9A6005E7D95 /* ContentView.swift */,
 				EFADECEA2AB25C42002D386D /* HomeView.swift */,
 				E77269952AF694FC00C9F0B8 /* FlagView.swift */,
@@ -328,7 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				EFADECF72AB26860002D386D /* F1ViewModel.swift */,
-				EF7126712AED2DB600880E9A /* LogInViewModel.swift */,
+				EF7126712AED2DB600880E9A /* AuthViewModel.swift */,
 				E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */,
 			);
 			path = ViewModel;
@@ -505,6 +536,7 @@
 				E77269962AF694FC00C9F0B8 /* FlagView.swift in Sources */,
 				EF4BA4132AB1B0EC005E7D95 /* Team.swift in Sources */,
 				EF2EEFFB2AD3EBD900C60EBA /* Car.swift in Sources */,
+				E7C0D54A2B0B5A2B0055E6CA /* FirebaseAuthService.swift in Sources */,
 				E77269942AF6948C00C9F0B8 /* TeamView.swift in Sources */,
 				EFADECEB2AB25C42002D386D /* HomeView.swift in Sources */,
 				EFDB177D2ACAA454003722A3 /* F1_RSView.swift in Sources */,
@@ -527,8 +559,10 @@
 				EFADECEF2AB25C88002D386D /* StandingsView.swift in Sources */,
 				E79E41AB2AFA5E8500C6F9DE /* ItemCarView.swift in Sources */,
 				E7A2541E2AF51E4C00A0C678 /* F1Wide.swift in Sources */,
+				E79A09722B03D47900447280 /* APIService.swift in Sources */,
 				EF0DBFAC2AB8ABB800D65013 /* VictoriesPilotView.swift in Sources */,
 				EF3AB24E2AB5DDE800BDDA9A /* ResultCourse.swift in Sources */,
+				E733898A2B06212200CA4B38 /* IntroductionView.swift in Sources */,
 				E77269922AF6881000C9F0B8 /* ItemTeamView.swift in Sources */,
 				EFDCF28E2AC1847800D3C209 /* GrandPrix.swift in Sources */,
 				EFE4FDA52AB9B38000EBC43F /* CaractCircuitView.swift in Sources */,
@@ -543,8 +577,10 @@
 				EF4BA3F72AB1A9A6005E7D95 /* F12025_iOSApp.swift in Sources */,
 				EF7126812AED5ABF00880E9A /* UserApp.swift in Sources */,
 				E79E41A92AFA5B8200C6F9DE /* CarView.swift in Sources */,
+				E77BA4BE2B03764000FF9A28 /* ItemProfileView.swift in Sources */,
 				EFAC8B042AC2C3F900FAA26E /* MenuView.swift in Sources */,
-				EF7126722AED2DB600880E9A /* LogInViewModel.swift in Sources */,
+				EF7126722AED2DB600880E9A /* AuthViewModel.swift in Sources */,
+				E74959D12B0DF49D00DB7648 /* ChangePasswdView.swift in Sources */,
 				E769C71D2AF5C31600FB0CE5 /* APIViewModel.swift in Sources */,
 				EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */,
 				EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */,

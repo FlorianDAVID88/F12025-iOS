@@ -13,7 +13,7 @@ struct ListVictoriesView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-                       
+            
             if victories.count != 0 {
                 Text("Victoires \(is_GP ? "GP" : "Sprint") (\(victories.count)) : ")
                     .font(.custom("Formula1", size: 20))
@@ -46,7 +46,7 @@ struct ListVictoriesView: View {
                 }
             }
         }
-
+        
     }
 }
 
@@ -56,10 +56,9 @@ struct VictoriesPilotView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 25) {
-            let victoriesPilot = getVictoriesPilot()
-            let victoriesGP = victoriesPilot.filter { !$0.isSprint }
-            let victoriesSprint = victoriesPilot.filter { $0.isSprint }
-                       
+            let victoriesGP = getVictoriesPilot(forSprint: false)
+            let victoriesSprint = getVictoriesPilot(forSprint: true)
+            
             ListVictoriesView(victories: victoriesGP, is_GP: true)
             ListVictoriesView(victories: victoriesSprint, is_GP: false)
         }
@@ -67,13 +66,9 @@ struct VictoriesPilotView: View {
         .padding(.horizontal, 5)
     }
     
-    func getVictoriesPilot() -> [ResultCourse] {
-        var results: [ResultCourse] = []
-        Task.init {
-            let res = await viewModel.getResultsFromPilot(pilot: pilot).filter { $0.position == 1 }
-            results.append(contentsOf: res)
-        }
-        return results
+    func getVictoriesPilot(forSprint: Bool) -> [ResultCourse] {
+        return []
+        //return viewModel.getResultsFromPilot(pilot: pilot).filter { $0.position == 1 && $0.isSprint == forSprint }
     }
 }
 
