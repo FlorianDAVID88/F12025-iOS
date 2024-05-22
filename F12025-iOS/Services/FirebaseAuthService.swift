@@ -14,6 +14,7 @@ enum FirebaseAuthError: Error {
     case authentificationError(error: String)
     case emailNotSent
     case updateError(for: String)
+    case credentialError
 }
 
 struct FirebaseAuthService {
@@ -67,16 +68,7 @@ struct FirebaseAuthService {
                 
                 completion(.success(user))
             }
-            
-            print(UserApp(from: user, connexion: "Email"))
         }
-    }
-    
-    /**
-     * Connexion with Apple
-     */
-    func signApple() {
-        return
     }
     
     /**
@@ -113,8 +105,37 @@ struct FirebaseAuthService {
     /**
      * Connexion with GitHub
      */
-    func signGitHub() {
-        return
+    func signGitHub(completion: @escaping (Result<User, Error>) -> Void) {
+        let provider = OAuthProvider(providerID: "github.com")
+        provider.customParameters = ["allow_signup": "false"]
+        provider.scopes = ["user:email"]
+        
+        provider.getCredentialWith(nil) { authCredential, error in
+            if error != nil {
+                completion(.failure(FirebaseAuthError.credentialError))
+                return
+            }
+            
+            guard let token = (authCredential as? OAuthCredential)?.accessToken else {
+                completion(.failure(FirebaseAuthError.credentialError))
+                return
+            }
+            
+            let credential = GitHubAuthProvider.credential(withToken: token)
+            Auth.auth().signIn(with: credential) { result, error in
+                if let err = error {
+                    completion(.failure(FirebaseAuthError.authentificationError(error: err.localizedDescription)))
+                    return
+                }
+                
+                guard let user = result?.user else {
+                    completion(.failure(FirebaseAuthError.userNotFound))
+                    return
+                }
+                
+                completion(.success(user))
+            }
+        }
     }
     
     func profileChanges(name: String, email: String) throws -> User? {

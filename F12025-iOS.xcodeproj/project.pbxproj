@@ -14,6 +14,7 @@
 		E74674712B000AFA005AC39D /* Car.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74674732B000AFA005AC39D /* Car.strings */; };
 		E74674762B001EC0005AC39D /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74674752B001EC0005AC39D /* ResultsView.swift */; };
 		E74959D12B0DF49D00DB7648 /* ChangePasswdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74959D02B0DF49D00DB7648 /* ChangePasswdView.swift */; };
+		E74959FB2B0F56D000DB7648 /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74959FA2B0F56D000DB7648 /* SignInButton.swift */; };
 		E769C71D2AF5C31600FB0CE5 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */; };
 		E77269922AF6881000C9F0B8 /* ItemTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269912AF6881000C9F0B8 /* ItemTeamView.swift */; };
 		E77269942AF6948C00C9F0B8 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77269932AF6948C00C9F0B8 /* TeamView.swift */; };
@@ -96,6 +97,7 @@
 		E74674742B000AFC005AC39D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Car.strings; sourceTree = "<group>"; };
 		E74674752B001EC0005AC39D /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		E74959D02B0DF49D00DB7648 /* ChangePasswdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswdView.swift; sourceTree = "<group>"; };
+		E74959FA2B0F56D000DB7648 /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
 		E769C71C2AF5C31600FB0CE5 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
 		E77269912AF6881000C9F0B8 /* ItemTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTeamView.swift; sourceTree = "<group>"; };
 		E77269932AF6948C00C9F0B8 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				EF7126752AED37B100880E9A /* SignInView.swift */,
 				E7977A8C2AF44A9800536A13 /* SignUpView.swift */,
 				E7977A902AF45E3B00536A13 /* SliderSignView.swift */,
+				E74959FA2B0F56D000DB7648 /* SignInButton.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				E74959D12B0DF49D00DB7648 /* ChangePasswdView.swift in Sources */,
 				E769C71D2AF5C31600FB0CE5 /* APIViewModel.swift in Sources */,
 				EF13ECBA2AB34F2600AD05A3 /* AllGPView.swift in Sources */,
+				E74959FB2B0F56D000DB7648 /* SignInButton.swift in Sources */,
 				EFADECED2AB25C6B002D386D /* AllTeamsView.swift in Sources */,
 				E7A2541A2AF51E2000A0C678 /* F1Bold.swift in Sources */,
 			);
@@ -766,6 +770,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "F12025-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "F1 2025";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -795,6 +801,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "F12025-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "F1 2025";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

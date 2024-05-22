@@ -72,23 +72,8 @@ struct SignInView: View {
             Divider()
                 .padding(.vertical)
             
-            Button {
-                signVM.signWith(rs: "Google")
-                if signVM.isLogged() { self.presentationMode.wrappedValue.dismiss() }
-            } label: {
-                HStack {
-                    Image("google-logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 25)
-                    Text("Sign in with Google")
-                }
-                .padding()
-                .background(.blue)
-                .cornerRadius(10)
-                .modifier(F1Bold(size: 20))
-                .foregroundColor(.white)
-            }
+            SignInButton(socialNetwork: "Google")
+            SignInButton(socialNetwork: "GitHub")
         }
         .navigationBarTitle("Log in", displayMode: .inline)
     }

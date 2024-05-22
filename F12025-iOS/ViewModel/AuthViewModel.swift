@@ -96,6 +96,15 @@ class AuthViewModel: ObservableObject {
      * @param rs the social network
      */
     func signWith(rs: String) {
+        self.state = .loading
+        switch(rs) {
+            case "Google": self.authGoogle()
+            case "GitHub": self.authGithub()
+            default: return
+        }
+    }
+    
+    private func authGoogle() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         
         let config = GIDConfiguration(clientID: clientID)
@@ -107,35 +116,50 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
-            self.state = .loading
-            switch(rs) {
-                case "Apple": self.authApple()
-                case "Google": self.authGoogle(user: user)
-                case "GitHub": self.authGithub()
-                default: return
+            self.service.signGoogle(user: user) { result in
+                switch result {
+                    case .success(let userApp):
+                        self.setCurrentUser(user: UserApp(from: userApp, connexion: "Google"))
+                        self.state = .success()
+                    case .failure(let error):
+                        self.state = .failed(error: error)
+                        print(error.localizedDescription)
+                    }
             }
         }
     }
     
-    private func authApple() {
-        return
-    }
-    
-    private func authGoogle(user: GIDSignInResult?) {
-        service.signGoogle(user: user) { result in
-            switch result {
-                case .success(let userApp):
-                    self.setCurrentUser(user: UserApp(from: userApp, connexion: "Google"))
-                    self.state = .success()
-                case .failure(let error):
-                    self.state = .failed(error: error)
-                    print(error.localizedDescription)
-                }
-        }
-    }
-    
     private func authGithub() {
-        return
+        let provider = OAuthProvider(providerID: "github.com")
+        provider.customParameters = ["allow_signup": "false"]
+        provider.scopes = ["user:email"]
+        
+        provider.getCredentialWith(nil) { authCredential, error in
+            if error != nil {
+                return
+            }
+            if let credential = authCredential {
+                Auth().currentUser!.link(withCredential: credential) { authResult, error in
+                    if error != nil {
+                        return
+                    }
+                    
+                    guard let oauthCredential = authResult.credential as? OAuthCredential else { return }
+                    
+                    service.signGitHub() { result in
+                        switch result {
+                        case .success(let userApp):
+                            self.setCurrentUser(user: UserApp(from: userApp, connexion: "GitHub"))
+                            self.state = .success()
+                        case .failure(let error):
+                            self.state = .failed(error: error)
+                            print(error.localizedDescription)
+                        }
+                    }
+                }
+            }
+        }
+        
     }
     
     func change(name: String, email: String) {
